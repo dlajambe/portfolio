@@ -8,6 +8,9 @@ colorama @ file:///C:/ci_311/colorama_1676422310965/work
 cryptography @ file:///C:/b/abs_f4do8t8jfs/croot/cryptography_1694444424531/work
 filelock @ file:///C:/ci_311/filelock_1676427284139/work
 Flask @ file:///C:/ci_311/flask_1676436667658/work
+Flask-Login @ file:///C:/ci_311/flask-login_1676449916673/work
+Flask-SQLAlchemy @ file:///C:/ci_311/flask-sqlalchemy_1676449960347/work
+greenlet @ file:///C:/ci_311/greenlet_1676436788118/work
 idna @ file:///C:/ci_311/idna_1676424932545/work
 itsdangerous @ file:///tmp/build/80754af9/itsdangerous_1621432558163/work
 Jinja2 @ file:///C:/ci_311/jinja2_1676424968965/work
@@ -29,6 +32,7 @@ pytz @ file:///C:/b/abs_19q3ljkez4/croot/pytz_1695131651401/work
 PyYAML @ file:///C:/b/abs_782o3mbw7z/croot/pyyaml_1698096085010/work
 requests @ file:///C:/b/abs_316c2inijk/croot/requests_1690400295842/work
 six @ file:///tmp/build/80754af9/six_1644875935023/work
+SQLAlchemy @ file:///C:/b/abs_d3tao6jnck/croot/sqlalchemy_1695720955292/work
 sympy @ file:///C:/ci_311_rebuilds/sympy_1679009400182/work
 torch==2.1.0
 torchaudio==2.1.0
