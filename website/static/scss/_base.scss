@@ -1,13 +1,31 @@
 // TODO: SEe if repetition can be avoided using SASS functions and mixins
 
 // Navigation bar
-.nav {
+.navbar {
     display: flex;
+    align-items: center;
+    background-color: lightblue;
+    justify-content: space-between;
 
-    .links {
+    .nav-logo {
+        background-color: red;
+    }
+
+    .nav-links {
         display: flex;
-        a {
-            color: $text-colour-dark;
+        list-style: none;
+
+        .nav-item:not(:first-of-type) {
+            margin-left: 1.5em;
+        }
+
+        .nav-link {
+            color: $text-colour-main;
+            font-weight: 500;
+        }
+
+        .nav-link:hover {
+            color: $text-colour-hover;
         }
     }
 }

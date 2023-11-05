@@ -1,3 +1,5 @@
 // Global styling variables
-$text-colour-light: white;
-$text-colour-dark: #707070;
+$accent-colour: rgba(255, 140, 0, 0.767);
+
+$text-colour-main: #707070;
+$text-colour-hover: $accent-colour;
