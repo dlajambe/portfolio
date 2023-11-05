@@ -22,8 +22,10 @@ def create_app():
     assets = Environment(app)
     scss = Bundle(
         'scss/main.scss', 
-        filters='libsass', 
+        filters='libsass',
+        depends='scss/*',
         output='gen/main.%(version)s.css')
     assets.register('main_css', scss)
+    
     return app
 
