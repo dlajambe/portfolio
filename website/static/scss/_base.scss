@@ -1,0 +1,18 @@
+// Global styling variables
+$text-colour-light: white;
+$text-colour-dark: #707070;
+
+
+// TODO: SEe if repetition can be avoided using SASS functions and mixins
+
+// Navigation bar
+.nav {
+    display: flex;
+
+    .links {
+        display: flex;
+        a {
+            color: $text-colour-dark;
+        }
+    }
+}
