@@ -1,10 +1,13 @@
 // TODO: SEe if repetition can be avoided using SASS functions and mixins
+* {
+    margin: 0;
+}
+
 html {
     font-size: 16px;
 }
 
-body { 
-    margin:0;
+body {
     width: 100vw;
     max-width: 100%;
 }
@@ -18,11 +21,12 @@ body {
     position: fixed;
     width: 100vw;
     max-width: 100%;
+    top: 0;
 
     .nav-links {
         display: flex;
         list-style: none;
-        padding: 2rem 2rem;
+        padding: $navlink-padding $navlink-padding;
         
         .nav-item:not(:first-of-type) {
             margin-left: 1.5rem;
@@ -33,7 +37,7 @@ body {
             font-family: $font-family;
             font-weight: 700;
             letter-spacing: 0.1rem;
-            font-size: 1rem;
+            font-size: $navbar-font-size;
             color: $text-colour-main;
         }
 
