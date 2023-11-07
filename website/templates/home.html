@@ -1,10 +1,24 @@
 {% extends 'base.html' %}
 {% block title %}Home{% endblock %}
 {% block content %}
-<div class="welcome">
-  <h1>Welcome to Data with David</h1>
-</div>
-<div class="about">
+<section class="home-welcome">
+  <div class="home-welcome-content">
+    <h1>Hello! I am David LaJambe</h1>
+    <h2>My passion is designing, developing, and deploying machine learning and optimization applications.</h1>
+  </div>
+</section>
+<section class="home-about">
   <h1>About me</h1>
-</div>
+</section>
+<section class="home-projects">
+  <div class="home-projects-title">
+    <h1>Projects</h1>
+  </div>
+  <div class="home-projects-examples">
+    <h1>Shakespeare script generator</h1>
+    <h1>Encyclopedic chatbot</h1>
+    <h1>Game soundtrack generation</h1>
+    <h1>Metaheuristic optimizer</h1>
+  </div>
+</section>
 {% endblock %}
