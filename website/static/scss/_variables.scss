@@ -1,11 +1,11 @@
 // Global styling variables
-$accent-colour: rgba(255, 140, 0, 0.767);
+$accent-colour: rgb(126, 49, 214);
 
 $text-colour-main: #707070;
 $text-colour-main: #333;
 $text-colour-hover: $accent-colour;
 
-$font-family: 'Source Sans Pro', sans-serif;
+$font-family: 'eurostile', 'europa', 'Source Sans Pro', sans-serif;
 
 $navbar-font-size: 1rem;
 $navlink-padding: calc(2*#{$navbar-font-size});
