@@ -3,7 +3,7 @@
     flex-direction: column;
     align-items: center;
     background-color: darkgrey;
-    
+
     .home-welcome-content {
         display: flex;
         align-items: center;
@@ -17,6 +17,9 @@
 
         .home-welcome-mission {
             background-color: pink;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
 
         .home-welcome-image {
@@ -34,7 +37,7 @@
 // TODO: Use ID to differentiate between sections once OO CSS is
 // implemented
 
-and use ID to differentiate between home page sections
+// and use ID to differentiate between home page sections
 .home-about {
     display: flex;
     flex-direction: column;
@@ -49,6 +52,7 @@ and use ID to differentiate between home page sections
         .home-about-bio {
             display: flex;
             flex-direction: column;
+            align-items: center;
         }
 
         .home-about-skills {
