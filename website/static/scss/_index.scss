@@ -1,28 +1,24 @@
-.home-welcome {
+.home-header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: darkgrey;
+    justify-content: center;
 
-    .home-welcome-content {
-        display: flex;
-        align-items: center;
-            // background-image: url("../images/subtle-prism.png");
-        background-color: lightgrey;
-        background-attachment: scroll;
-        background-size: cover;
-        margin-top: $navbar-height;
+    .home-header-content {
+        // background-image: url("../images/subtle-prism.png");
+        // background-attachment: scroll;
+        // background-size: cover;
         display: flex;
         align-items: center;
 
-        .home-welcome-mission {
+        .home-header-mission {
             background-color: pink;
             display: flex;
             flex-direction: column;
             align-items: center;
         }
 
-        .home-welcome-image {
+        .home-header-image {
             background-color: orange;
         }
     }
