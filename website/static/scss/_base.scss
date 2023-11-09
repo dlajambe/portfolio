@@ -79,3 +79,13 @@ body {
     background-color: #F6F6F6;
     height: 550px;
 }
+
+.page-footer {
+    background-color: black;
+    font-family: $font-family;
+    font-size: $font-size;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 2rem;
+}

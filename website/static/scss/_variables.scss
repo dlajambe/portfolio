@@ -6,10 +6,10 @@ $text-colour-main: #333;
 $text-colour-hover: $accent-colour;
 
 $font-family: 'eurostile', 'europa', 'Source Sans Pro', sans-serif;
-
+$font-size: 1rem;
 // These variables allow the first content block on each page to be shifted down
 // so its starts flush with the bottom of the navbar
-$navbar-font-size: 1rem;
+$navbar-font-size: $font-size;
 $navlink-padding: calc(2*#{$navbar-font-size});
 $navbar-height: calc(#{$navbar-font-size} * 5); // 1 rem for the text, 2 rem above, and 2 rem below = 5 rem total height
 $navlogo-dim: calc(#{$navbar-font-size} * 4);
