@@ -1,12 +1,17 @@
 // Global styling variables
 $accent-colour: rgb(126, 49, 214);
 
-$text-colour-main: #707070;
-$text-colour-main: #333;
-$text-colour-hover: $accent-colour;
+$font-colour-light: #707070;
+$font-colour-dark: #272727;
 
-$font-family: 'eurostile', 'europa', 'Source Sans Pro', sans-serif;
-$font-size: 1rem;
+$background-colour-light: white;
+$background-colour-dark: #F8F8F8;
+
+$border-colour: #cfcfcf;
+
+$font-family: 'Montserrat', 'eurostile', 'europa', 'Source Sans Pro', sans-serif;
+$font-size: 16px;
+$font-size-title: 18px;
 // These variables allow the first content block on each page to be shifted down
 // so its starts flush with the bottom of the navbar
 $navbar-font-size: $font-size;

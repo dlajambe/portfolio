@@ -36,21 +36,60 @@
   </div>
 </section>
 <section class="home-projects">
-  <div class="home-projects-title">
-    <h1>Projects</h1>
+  <div class="section-title">
+    Featured projects
   </div>
-  <div class="home-projects-thumbnail">
-    <h1>Shakespeare script generator</h1>
+  <div class="home-projects-grid">
+    <div class="project-thumbnail">
+      <div class="thumbnail-graphic">
+        <img src="{{url_for('static', filename='images/shakespeare.png')}}" align="middle" alt="Shakespeare"/>
+      </div>
+      <div class="thumbnail-description">
+        <div class="thumbnail-title">
+          Shakespearean Script Generator
+        </div>
+        <div class="thumbnail-body">
+          A large language model that generates novel shakespearean scripts.
+        </div>
+      </div>
+    </div>
+    <div class="project-thumbnail">
+      <div class="thumbnail-graphic">
+        <img src="{{url_for('static', filename='images/delivery.png')}}" align="middle" alt="delivery"/>
+      </div>
+      <div class="thumbnail-description">
+        <div class="thumbnail-title">
+          Courrier Route Optimizer
+        </div>
+        <div class="thumbnail-body">
+          An optimization engine that generates efficient package delivery routes.
+        </div>
+      </div>
+    </div>
+    <div class="project-thumbnail">
+      <div class="thumbnail-graphic">
+        <img src="{{url_for('static', filename='images/cool-background.png')}}" align="middle" alt="Shakespeare"/>
+      </div>
+      <div class="thumbnail-description">
+        <div class="thumbnail-title">
+          Fantasy Soundtrack Composer
+        </div>
+        <div class="thumbnail-body">
+          A transformer-based deep neural net that composes fantasy-themed MIDI scores.
+        </div>
+      </div>
+    </div>
   </div>
-  <div class="home-projects-thumbnail">
+  
+  <!-- <div class="project-thumbnail">
     <h1>Encyclopedic chatbot</h1>
   </div>
-  <div class="home-projects-thumbnail">
+  <div class="project-thumbnail">
     <h1>Fantasy soundtrack generator</h1>
   </div>
-  <div class="home-projects-thumbnail">
+  <div class="project-thumbnail">
     <h1>Amazon delivery optimization</h1>
-  </div>
+  </div> -->
   <a class="button", href="/projects">Full portfolio</a>
 </section>
 {% endblock %}

@@ -4,12 +4,13 @@
 }
 
 html {
-    font-size: 16px;
+    font-size: $font-size;
 }
 
 body {
     width: 100vw;
     max-width: 100%;
+    font-family: $font-family;
 }
 
 .button {
@@ -22,7 +23,6 @@ body {
     cursor: pointer;
     transition: background-color 0.2s;
     text-decoration: none;
-    font-family: $font-family;
     margin: 2rem;
     &:hover {
         background-color: $accent-colour;
@@ -61,31 +61,69 @@ body {
 
         .nav-link {
             text-decoration: none;
-            font-family: $font-family;
             font-weight: 700;
             letter-spacing: 0.1rem;
             font-size: $navbar-font-size;
-            color: $text-colour-main;
+            color: $font-colour-light;
         }
 
         .nav-link:hover {
-            color: $text-colour-hover;
+            color: $accent-colour;
         }
     }
 }
 
 .page-header {
     margin-top: $navbar-height;
-    background-color: #F6F6F6;
+    background-color: $background-colour-dark;
     height: 550px;
 }
 
 .page-footer {
     background-color: black;
-    font-family: $font-family;
     font-size: $font-size;
     color: white;
     display: flex;
     flex-direction: column;
     padding: 2rem 2rem;
+}
+
+.project-thumbnail {
+    transition: box-shadow .3s;
+    border: 1px solid $border-colour;
+    border-radius: 10px;
+    margin: 10px;
+    width: 350px;
+    height: 300px;
+    padding: 10px;
+
+    .thumbnail-graphic {
+        width: inherit;
+        height: 70%;
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+    }
+
+    .thumbnail-description {
+        margin: 10px;
+        .thumbnail-title {
+            font-size: $font-size-title;
+            font-weight: 600;
+            color: $font-colour-dark;
+        }
+
+        .thumbnail-body {
+            font-size: $font-size;
+            color: $font-colour-light;
+        }
+    }
+
+    &:hover {
+        box-shadow: 0 0 20px rgba(33,33,33,.2); 
+        cursor: pointer;
+    }
 }

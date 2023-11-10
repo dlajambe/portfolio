@@ -1,5 +1,5 @@
 # CSS/SASS refactoring
-- Create project thumbnail class
+- Improve scaling of height / width of project thumbnails and organize in autosizing grid
 - Create "skill" class for home page skills 
 - Project case study class
 - Refactor flexbox types into classes or SASS macros to avoid CSS repetition
@@ -28,3 +28,4 @@
 - Navbar shifting due to vertical scroll bar appearing on longer pages
 - Use ID to differentiate between sections once OO CSS is
 implemented
+- Add social media handles: Git and LinkedIn

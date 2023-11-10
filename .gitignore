@@ -1,6 +1,9 @@
 # Generated files
 website/static/gen
 
+# Images
+website/static/images
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
