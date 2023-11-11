@@ -1,5 +1,6 @@
 # CSS/SASS refactoring
 - Improve scaling of height / width of project thumbnails and organize in autosizing grid
+- Get the header elements to line up perfectly on each page
 - Create "skill" class for home page skills 
 - Project case study class
 - Refactor flexbox types into classes or SASS macros to avoid CSS repetition
@@ -15,6 +16,7 @@
 
 # Projects page:
 - Add page header
+- Add cool image of project thumbnails to page header
 - Add project thumbnails
 - Add clickable filters to select 
 
