@@ -33,14 +33,6 @@ body {
 
 // Navigation bar
 .navbar {
-
-    .nav-logo {
-        background-color: darkgrey;
-        height: $navlogo-dim;
-        width: $navlogo-dim;
-        margin-left: 5vh;
-    }
-
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -49,6 +41,20 @@ body {
     width: 100vw;
     max-width: 100%;
     top: 0;
+    
+    .nav-logo {
+        background-color: transparent;
+        height: $navlogo-dim;
+        width: $navlogo-dim;
+        margin-left: 5vh;
+
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            border-radius: inherit;
+        }
+    }
 
     .nav-links {
         display: flex;
