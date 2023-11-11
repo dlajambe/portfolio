@@ -3,19 +3,26 @@
 {% block content %}
 <section class="page-header">
   <div class="page-header-content">
-    <div class="page-header-text">
-      <div class="page-header-text-large">
-        Hi, I'm David.
+    <div class="page-header-left">
+      <div class="page-header-text">
+        <div class="page-header-text-large">
+          Hi, I'm David.
+        </div>
+        <div class="page-header-text-medium">
+          Software Developer & Machine Learning Engineer
+        </div>
+        <div class="page-header-text-small">
+          I build and deploy data-driven applications to help organizations prosper.
+        </div>
       </div>
-      <div class="page-header-text-medium">
-        Software Developer & Machine Learning Engineer
-      </div>
-      <div class="page-header-text-small">
-        I build and deploy data-driven applications to help organizations prosper.
+      <div class="page-header-button">
+        <a class="button", href="/about">About me</a>
       </div>
     </div>
-    <div class="page-header-image">
-      <img src="{{url_for('static', filename='images/portrait.jpeg')}}" alt="portrait"/>
+    <div class="page-header-right">
+      <div class="page-header-image">
+        <img src="{{url_for('static', filename='images/portrait.jpeg')}}" alt="portrait"/>
+      </div>
     </div>
   </div>
 </section>
@@ -40,8 +47,11 @@
   </div>
 </section> -->
 <section class="page-content">
-  <div class="section-title">
+  <div class="page-content-title">
     My Recent Work
+  </div>
+  <div class="page-content-subtitle">
+    Here are some projects I have built and deployed. Try them out for yourself!  
   </div>
   <div class="home-projects-grid">
     <div class="project-thumbnail">
@@ -53,7 +63,7 @@
           Shakespearean Script Generator
         </div>
         <div class="thumbnail-body">
-          A large language model that generates novel shakespearean scripts.
+          A large language model that generates novel Shakespearean scripts.
         </div>
       </div>
     </div>
@@ -79,7 +89,7 @@
           Fantasy Soundtrack Composer
         </div>
         <div class="thumbnail-body">
-          A transformer-based deep neural net that composes fantasy-themed MIDI scores.
+          A transformer-based deep neural net that composes fantasy-themed music.
         </div>
       </div>
     </div>
@@ -94,6 +104,6 @@
   <div class="project-thumbnail">
     <h1>Amazon delivery optimization</h1>
   </div> -->
-  <a class="button", href="/projects">Full portfolio</a>
+  <a class="button", href="/projects">More projects</a>
 </section>
 {% endblock %}
