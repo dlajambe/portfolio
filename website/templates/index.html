@@ -1,21 +1,25 @@
 {% extends 'base.html' %}
 {% block title %}Home{% endblock %}
 {% block content %}
-<section class="page-header home-header">
-  <div class="home-header-content">
-    <div class="home-header-mission">
-      <div class="home-header-text">
-        <h1>David LaJambe - Data scientist & software developer.</h1>
-        <h2>I build data-driven applications to help organizations prosper.</h1>
+<section class="page-header">
+  <div class="page-header-content">
+    <div class="page-header-text">
+      <div class="page-header-text-large">
+        Hi, I'm David.
       </div>
-      <a class="button" href="/projects">My Projects</a>
+      <div class="page-header-text-medium">
+        Software Developer & Machine Learning Engineer
+      </div>
+      <div class="page-header-text-small">
+        I build and deploy data-driven applications to help organizations prosper.
+      </div>
     </div>
-    <div class="home-header-image">
-      <h1>Profile picture</h1>
+    <div class="page-header-image">
+      <img src="{{url_for('static', filename='images/portrait.jpeg')}}" alt="portrait"/>
     </div>
   </div>
 </section>
-<section class="home-about">
+<!-- <section class="home-about">
   <div class="home-about-content">
     <div class="home-about-bio">
       <div class="home-about-bio-text">
@@ -34,10 +38,10 @@
       <h2>Azure</h2>
     </div>
   </div>
-</section>
-<section class="home-projects">
+</section> -->
+<section class="page-content">
   <div class="section-title">
-    Featured projects
+    My Recent Work
   </div>
   <div class="home-projects-grid">
     <div class="project-thumbnail">

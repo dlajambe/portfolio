@@ -16,6 +16,7 @@
 # Projects page:
 - Add page header
 - Add project thumbnails
+- Add clickable filters to select 
 
 # About page
 - Add page header

@@ -44,7 +44,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: white;
+    background-color: black;
     position: fixed;
     width: 100vw;
     max-width: 100%;
@@ -64,19 +64,75 @@ body {
             font-weight: 700;
             letter-spacing: 0.1rem;
             font-size: $navbar-font-size;
-            color: $font-colour-light;
+            color: white;
         }
 
         .nav-link:hover {
-            color: $accent-colour;
+            color: $font-colour-light;
         }
     }
 }
 
 .page-header {
     margin-top: $navbar-height;
-    background-color: $background-colour-dark;
+    background-color: $background-colour-light;
     height: 550px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 10px 5px 5px red;
+    z-index: 0;
+
+    .page-header-content {
+        display: flex;
+        align-items: center;
+        gap: 50px;
+
+        .page-header-text {
+            display: flex;
+            flex-direction: column;
+            align-items: left;
+            width: 40vw;
+
+            .page-header-text-large {
+                font-size: 70px;
+                font-weight: 900;
+                color: $font-colour-dark;
+                margin-bottom: 25px;
+            }
+
+            .page-header-text-medium {
+                font-size: 35px;
+                color: $font-colour-light;
+                margin-bottom: 25px;
+            }
+
+            .page-header-text-small {
+                font-size: 25px;
+                color: $font-colour-light;
+            }
+        }
+
+        .page-header-image {
+            height: 400px;
+            width: 300px;
+
+            img {
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+                border-radius: 25px;
+            }
+        }
+    }
+}
+
+.page-content {
+    background-color: $background-colour-dark;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .page-footer {
