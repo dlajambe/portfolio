@@ -163,11 +163,27 @@ body {
 
 .page-footer {
     background-color: black;
-    font-size: $font-size;
     color: white;
     display: flex;
     flex-direction: column;
-    padding: 2rem 2rem;
+    padding: 1rem 1rem;
+
+    .page-footer-content {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        .page-footer-title {
+            font-size: $font-size-title;
+        }
+    
+        .page-footer-subtitle {
+    
+        }
+    
+        .page-footer-copyright {
+    
+        }
+    }
 }
 
 .project-thumbnail {

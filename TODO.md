@@ -6,25 +6,24 @@
 - Refactor flexbox types into classes or SASS macros to avoid CSS repetition
 - Refactor padding and margin into classes or SASS macros to avoid CSS repetition
 - Improve colour variables i.e. dark text colour, light text colour, primary colour, secondary colour, etc.
+- Create a separate template with all project thumbnails
+
+# Base template
+- Make formatting of underbar better
 
 # Home page:
-- Add project thumbnails
-- Add logo
-- Make mission section pop with CSS
-- Make mission text pretty
 - Make button appearance fit better with website theme
 
 # Projects page:
-- Add page header
 - Add cool image of project thumbnails to page header
 - Add project thumbnails
 - Add clickable filters to select 
 
 # About page
-- Add page header
+- Add image to page header
 
 # Contact page:
-- Add page header
+- Add image to page header
 - Add contact form
 
 # Miscellaneous: 
