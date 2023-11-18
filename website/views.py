@@ -14,6 +14,10 @@ def about():
 def projects():
     return render_template('projects.html')
 
+@views.route('/publications')
+def publications():
+    return render_template('publications.html')
+
 @views.route('/contact')
 def contact():
     return render_template('contact.html')
