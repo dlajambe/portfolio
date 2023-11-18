@@ -1,0 +1,40 @@
+.skills {
+    display: flex;
+
+    .skill-box {
+        background-color: $background-colour-light;
+        border: 1px solid $border-colour;
+        height: 700px;
+        width: 400px;
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+
+        .skill-box-icon {
+            height: 60px;
+            width: 60px;
+            align-self: center;
+            img {
+                height: 100%;
+                width: 100%;
+                object-fit: contain;
+            }
+        }
+
+        .skill-box-title {
+            font-size: $font-size-title;
+            font-weight: $font-weight-title;
+            text-align: center;
+        }
+    }
+
+    .skill-box:first-of-type {
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+    }
+
+    .skill-box:last-of-type {
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+}

@@ -11,6 +11,7 @@ body {
     width: 100vw;
     max-width: 100%;
     font-family: $font-family;
+    color: $font-colour-dark;
 }
 
 .button {
@@ -75,7 +76,7 @@ body {
 
         .nav-link {
             text-decoration: none;
-            font-weight: 700;
+            font-weight: $font-weight-title;
             letter-spacing: 0.1rem;
             font-size: $navbar-font-size;
             color: white;
@@ -117,7 +118,7 @@ body {
     
                 .page-header-text-large {
                     font-size: 70px;
-                    font-weight: 900;
+                    font-weight: $font-weight-title;
                     color: $font-colour-dark;
                 }
     
@@ -161,7 +162,7 @@ body {
     .page-content-title {
         color: $font-colour-dark;
         font-size: 30px;
-        font-weight: 900;
+        font-weight: $font-weight-title;
     }
 
     .page-content-subtitle {
@@ -224,7 +225,7 @@ body {
         margin: 10px;
         .thumbnail-title {
             font-size: $font-size-title;
-            font-weight: 600;
+            font-weight: $font-weight-title;
             color: $font-colour-dark;
         }
 
