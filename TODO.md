@@ -19,6 +19,10 @@
 - Add project thumbnails
 - Add clickable filters to select 
 
+# Publications page:
+- Make a CSS class for publication thumbnails
+- Add publication thumbnails for publications
+
 # About page
 - Add image to page header
 
