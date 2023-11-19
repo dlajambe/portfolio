@@ -1,5 +1,13 @@
 @import '_variables';
 @import '_breakpoints';
+
+// Components
+@import 'components/button';
+@import 'components/hyperlink';
+@import 'components/navbar';
+@import 'components/page_footer';
+@import 'components/page_header';
+
 @import '_base';
 @import '_index';
 @import '_about';

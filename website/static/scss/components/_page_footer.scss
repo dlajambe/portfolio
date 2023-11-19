@@ -1,0 +1,25 @@
+.page-footer {
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: $padding-base $padding-base;
+
+    .page-footer-content {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+
+        .page-footer-title {
+            font-size: $font-size-base + 2px;
+        }
+    
+        .page-footer-subtitle {
+    
+        }
+    
+        .page-footer-copyright {
+    
+        }
+    }
+}
