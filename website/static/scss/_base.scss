@@ -76,7 +76,7 @@ body {
 
         .nav-link {
             text-decoration: none;
-            font-weight: $font-weight-title;
+            font-weight: $font-weight-bold;
             letter-spacing: 0.1rem;
             font-size: $navbar-font-size;
             color: white;
@@ -118,7 +118,7 @@ body {
     
                 .page-header-text-large {
                     font-size: 70px;
-                    font-weight: $font-weight-title;
+                    font-weight: $font-weight-bold;
                     color: $font-colour-dark;
                 }
     
@@ -161,12 +161,12 @@ body {
 
     .page-content-title {
         color: $font-colour-dark;
-        font-size: 30px;
-        font-weight: $font-weight-title;
+        font-size: $font-size + 14px;
+        font-weight: $font-weight-bold;
     }
 
     .page-content-subtitle {
-        font-size: 20px;
+        font-size: $font-size + 4px;
         color: $font-colour-light;
         width: 50rem;
 
@@ -187,8 +187,9 @@ body {
         display: flex;
         flex-direction: column;
         gap: 0.5rem;
+
         .page-footer-title {
-            font-size: $font-size-title;
+            font-size: $font-size + 2px;
         }
     
         .page-footer-subtitle {
@@ -224,8 +225,8 @@ body {
     .thumbnail-description {
         margin: 10px;
         .thumbnail-title {
-            font-size: $font-size-title;
-            font-weight: $font-weight-title;
+            font-size: $font-size + 4px;
+            font-weight: $font-weight-bold;
             color: $font-colour-dark;
         }
 
