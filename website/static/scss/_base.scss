@@ -4,7 +4,7 @@
 }
 
 html {
-    font-size: $font-size;
+    font-size: $font-size-base;
 }
 
 body {
@@ -14,13 +14,18 @@ body {
     color: $font-colour-dark;
 }
 
+.container {
+    width: 100%;
+    max-width: 1200px;
+}
+
 .button {
-    background-color: white;
+    background-color: $background-colour-light;
     border-color: $accent-colour;
     color: $accent-colour;
     border: 2px solid $accent-colour;
-    border-radius: 999px;
-    padding: 0.75rem 1.5rem 0.75rem 1.5rem;
+    border-radius: $border-radius-base / 2;
+    padding: $padding-base;
     cursor: pointer;
     transition: background-color 0.2s;
     text-decoration: none;
@@ -55,7 +60,7 @@ body {
         background-color: transparent;
         height: $navlogo-dim;
         width: $navlogo-dim;
-        margin-left: 5vh;
+        margin-left: $margin-base;
 
         img {
             height: 100%;
@@ -71,7 +76,7 @@ body {
         padding: $navlink-padding $navlink-padding;
         
         .nav-item:not(:first-of-type) {
-            margin-left: 2rem;
+            margin-left: $margin-base + 1.25rem;
         }
 
         .nav-link {
@@ -143,7 +148,7 @@ body {
                     height: 100%;
                     width: 100%;
                     object-fit: cover;
-                    border-radius: 25px;
+                    border-radius: $border-radius-base;
                 }
             }
         }
@@ -156,22 +161,22 @@ body {
     flex-direction: column;
     align-items: center;
     gap: 25px;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding-top: $padding-base;
+    padding-bottom: $padding-base;
 
     .page-content-title {
         color: $font-colour-dark;
-        font-size: $font-size + 14px;
+        font-size: $font-size-base + 14px;
         font-weight: $font-weight-bold;
     }
 
     .page-content-subtitle {
-        font-size: $font-size + 4px;
+        font-size: $font-size-base + 4px;
         color: $font-colour-light;
         width: 50rem;
 
         p:not(:first-of-type) {
-            margin-top: 1rem;
+            margin-top: $margin-base;
         }
     }
 }
@@ -181,7 +186,7 @@ body {
     color: white;
     display: flex;
     flex-direction: column;
-    padding: 1rem 1rem;
+    padding: $padding-base $padding-base;
 
     .page-footer-content {
         display: flex;
@@ -189,7 +194,7 @@ body {
         gap: 0.5rem;
 
         .page-footer-title {
-            font-size: $font-size + 2px;
+            font-size: $font-size-base + 2px;
         }
     
         .page-footer-subtitle {
@@ -206,10 +211,10 @@ body {
     background-color: white;
     transition: box-shadow 0.3s;
     border: 1px solid $border-colour;
-    border-radius: 10px;
+    border-radius: $border-radius-base / 2;
     width: 350px;
     height: 300px;
-    padding: 10px;
+    padding: $padding-base;
 
     .thumbnail-graphic {
         width: inherit;
@@ -218,20 +223,20 @@ body {
             height: 100%;
             width: 100%;
             object-fit: cover;
-            border-radius: 5px;
+            border-radius: $border-radius-base / 4;
         }
     }
 
     .thumbnail-description {
-        margin: 10px;
+        margin: $margin-base;
         .thumbnail-title {
-            font-size: $font-size + 4px;
+            font-size: $font-size-base + 4px;
             font-weight: $font-weight-bold;
             color: $font-colour-dark;
         }
 
         .thumbnail-body {
-            font-size: $font-size;
+            font-size: $font-size-base;
             color: $font-colour-light;
         }
     }

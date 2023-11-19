@@ -6,7 +6,7 @@
         border: 1px solid $border-colour;
         height: 700px;
         width: 400px;
-        padding: 1rem;
+        padding: $padding-base;
         display: flex;
         flex-direction: column;
 
@@ -22,19 +22,19 @@
         }
 
         .skill-box-title {
-            font-size: $font-size + 4px;
+            font-size: $font-size-base + 4px;
             font-weight: $font-weight-bold;
             text-align: center;
         }
     }
 
     .skill-box:first-of-type {
-        border-top-left-radius: 20px;
-        border-bottom-left-radius: 20px;
+        border-top-left-radius: $border-radius-base;
+        border-bottom-left-radius: $border-radius-base;
     }
 
     .skill-box:last-of-type {
-        border-top-right-radius: 20px;
-        border-bottom-right-radius: 20px;
+        border-top-right-radius: $border-radius-base;
+        border-bottom-right-radius: $border-radius-base;
     }
 }
