@@ -1,0 +1,69 @@
+$grid-columns: 3;
+$grid-max-width: 2400px;
+// Base classes 
+
+.container {
+    width: 100%;
+    max-width: $grid-max-width;
+    margin: 0 auto; // Centralizes content into a central column on the page
+    padding: 0 $padding-base;
+    box-sizing: border-box;
+}
+
+.row {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.cellar {
+    background-color: red;
+    border-color: black;
+    border-style: solid;
+}
+
+// Column classes - used to distribute content within a row
+@mixin column-size($column-width) {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: $column-width;
+}
+
+@include xs {
+    @for $i from 1 through $grid-columns {
+        .col-#{$i}-xs {
+            @include column-size($i * 100% / $grid-columns);
+        }
+    }
+}
+
+@include sm {
+    @for $i from 1 through $grid-columns {
+        .col-#{$i}-sm {
+            @include column-size($i * 100% / $grid-columns);
+        }
+    }
+}
+
+@include md {
+    @for $i from 1 through $grid-columns {
+        .col-#{$i}-md {
+            @include column-size($i * 100% / $grid-columns);
+        }
+    }
+}
+
+@include lg {
+    @for $i from 1 through $grid-columns {
+        .col-#{$i}-lg {
+            @include column-size($i * 100% / $grid-columns);
+        }
+    }
+}
+
+@include xl {
+    @for $i from 1 through $grid-columns {
+        .col-#{$i}-xl {
+            @include column-size($i * 100% / $grid-columns);
+        }
+    }
+}

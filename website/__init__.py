@@ -20,10 +20,11 @@ def create_app():
     they loaded the page.
     """
     assets = Environment(app)
+    
     scss = Bundle(
         'scss/main.scss', 
         filters='libsass',
-        depends='scss/*',
+        depends='scss/*.scss',
         output='gen/main.%(version)s.css')
     assets.register('main_css', scss)
     
