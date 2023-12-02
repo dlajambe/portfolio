@@ -19,9 +19,9 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 25px;
-    padding-top: $padding-base;
-    padding-bottom: $padding-base;
+    gap: 2 * $padding-base;
+    padding-top: 2 * $padding-base;
+    padding-bottom: 2 * $padding-base;
 
     .page-content-title {
         color: $font-colour-dark;
@@ -32,7 +32,7 @@ body {
     .page-content-subtitle {
         font-size: $font-size-base + 4px;
         color: $font-colour-light;
-        width: 50rem;
+        max-width: 1200px;
 
         p:not(:first-of-type) {
             margin-top: $margin-base;
