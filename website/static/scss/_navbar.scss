@@ -6,6 +6,8 @@
     position: fixed;
     width: 100vw;
     max-width: 100%;
+    height: $navbar-height;
+    max-height: $navbar-height;
     top: 0;
     
     .nav-logo {
@@ -23,9 +25,9 @@
     }
 
     .nav-links {
-        display: flex;
+        display: none; // Display is turned on only above certain screen size
         list-style: none;
-        padding: $navlink-padding $navlink-padding;
+        padding: 0 $navlink-padding;
         
         .nav-item:not(:first-of-type) {
             margin-left: $margin-base + 1.25rem;
@@ -41,6 +43,32 @@
 
         .nav-link:hover {
             color: lighten($accent-colour, 15%);
+        }
+    }
+    
+    .hamburger {
+        color: white;
+        font-size: $font-size-base + 12px;
+        padding-right: $navlink-padding;
+        z-index: 100;
+
+        border-style: none;
+        background-color: transparent;
+    }
+
+    .hamburger:hover {
+        color: lighten($accent-colour, 15%);
+        cursor: pointer;
+    }
+
+    // For medium size screens and larger, the hamburger icon
+    // is replaced with a full navbar
+    @include md {
+        .hamburger {
+            display: none;
+        }
+        .nav-links {
+            display: flex;
         }
     }
 }

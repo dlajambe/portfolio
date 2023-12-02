@@ -22,5 +22,5 @@ $border-radius-base: 20px;
 // so its starts flush with the bottom of the navbar
 $navbar-font-size: $font-size-base;
 $navlink-padding: calc(2*#{$navbar-font-size});
-$navbar-height: calc(#{$navbar-font-size} * 5); // 1 rem for the text, 2.5 rem above, and 2 rem below = 6 rem total height
-$navlogo-dim: calc(#{$navbar-font-size} * 4);
+$navbar-height: calc(#{$navbar-font-size} * 5); // 1 rem for the text, 2 rem above, and 2 rem below = 5 rem total height
+$navlogo-dim: calc(#{$navbar-height} * 0.8);
