@@ -33,6 +33,7 @@ body {
         font-size: $font-size-base + 4px;
         color: $font-colour-light;
         max-width: 1200px;
+        padding: $padding-base;
 
         p:not(:first-of-type) {
             margin-top: $margin-base;

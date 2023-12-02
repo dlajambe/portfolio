@@ -10,6 +10,7 @@
     // box-sizing: border-box;
 
     .page-header-content {
+        padding: $padding-base;
         display: flex;
         align-items: center;
         gap: 50px;
@@ -24,7 +25,9 @@
                 display: flex;
                 flex-direction: column;
                 align-items: left;
-                width: 40vw;
+                @include md {
+                    width: 40vw;
+                }
                 gap: 25px;
     
                 .page-header-text-large {
@@ -49,7 +52,10 @@
             .page-header-image {
                 height: 400px;
                 width: 300px;
-    
+                display: none;
+                @include md {
+                    display: block;
+                }
                 img {
                     height: 100%;
                     width: 100%;

@@ -7,7 +7,6 @@
     {% assets "main_css" %}
       <link rel="stylesheet" href="{{ ASSET_URL }}">
     {% endassets %}
-    <script src="{{url_for('static', filename='js/scripts.js')}}"></script>
     <title>{% block title %}{% endblock %}</title>
   </head>
   <body>
@@ -17,23 +16,23 @@
           <img src="{{url_for('static', filename='images/logo/dl-high-resolution-logo-transparent.png')}}" alt="logo"/>
         </div>
       </a>
-      <div class="nav-links">
-        <div class="nav-item">
+      <ul class="nav-menu">
+        <li class="nav-item">
           <a class="nav-link" href="/">HOME</a>
-        </div>
-        <div class="nav-item">
+        </li>
+        <li class="nav-item">
           <a class="nav-link" href="/about">ABOUT</a>
-        </div>
-        <div class="nav-item">
+        </li>
+        <li class="nav-item">
           <a class="nav-link" href="/projects">PROJECTS</a>
-        </div>
-        <div class="nav-item">
+        </li>
+        <li class="nav-item">
           <a class="nav-link" href="/publications">PUBLICATIONS</a>
-        </div>
-        <div class="nav-item">
+        </li>
+        <li class="nav-item">
           <a class="nav-link" href="/contact">CONTACT</a>
-        </div>
-      </div>
+        </li>
+      </ul>
       <div class="hamburger">
         &#9776
       </div>
@@ -54,5 +53,6 @@
         </div>
     </section>
     {% endblock %}
+    <script type='text/javascript' src="{{ url_for('static', filename='js/hamburger.js') }}"></script>
   </body>
 </html>
