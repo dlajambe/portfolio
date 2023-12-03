@@ -1,0 +1,26 @@
+.page-content {
+    background-color: $background-colour-dark;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2 * $padding-base;
+    padding-top: 2 * $padding-base;
+    padding-bottom: 2 * $padding-base;
+
+    .page-content-title {
+        color: $font-colour-dark;
+        font-size: $font-size-base + 14px;
+        font-weight: $font-weight-bold;
+    }
+
+    .page-content-subtitle {
+        font-size: $font-size-base + 4px;
+        color: $font-colour-light;
+        max-width: $max-content-width;
+        padding: $padding-base;
+
+        p:not(:first-of-type) {
+            margin-top: $margin-base;
+        }
+    }
+}

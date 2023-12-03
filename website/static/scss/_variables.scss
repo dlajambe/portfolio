@@ -24,3 +24,6 @@ $navbar-font-size: $font-size-base;
 $navlink-padding: calc(2*#{$navbar-font-size});
 $navbar-height: calc(#{$navbar-font-size} * 5); // 1 rem for the text, 2 rem above, and 2 rem below = 5 rem total height
 $navlogo-dim: calc(#{$navbar-height} * 0.8);
+
+// Maximum content width beyond which only background should appear
+$max-content-width: 1200px;
