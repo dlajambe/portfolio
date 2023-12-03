@@ -24,7 +24,7 @@ def create_app():
     scss = Bundle(
         'scss/main.scss', 
         filters='libsass',
-        depends='scss/*.scss',
+        depends=('scss/*.scss', 'scss/components/*.scss'),
         output='gen/main.%(version)s.css')
     assets.register('main_css', scss)
     

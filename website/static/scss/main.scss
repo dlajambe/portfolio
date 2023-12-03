@@ -2,16 +2,13 @@
 @import '_breakpoints';
 
 // Components
-@import 'button';
-@import 'card';
-@import 'hyperlink';
-@import 'navbar';
-@import 'page_footer';
-@import 'page_header';
+@import 'components/_button';
+@import 'components/_card';
+@import 'components/_hyperlink';
+@import 'components/_navbar';
+@import 'components/_page_footer';
+@import 'components/_page_header';
 
 @import '_base';
 @import '_index';
 @import '_about';
-@import '_projects';
-@import '_publications';
-@import '_contact';
