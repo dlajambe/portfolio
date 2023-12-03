@@ -94,3 +94,11 @@
         }
     }
 }
+
+// Since the navbar is in a fixed position, a class is needed to offset to ensure that
+// it never covers up the page headers that follow
+.navbar-separator {
+    height: $navbar-height;
+    width: auto;
+    background-color: transparent;
+}

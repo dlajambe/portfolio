@@ -1,5 +1,4 @@
 .page-content {
-    background-color: $background-colour-dark;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -16,10 +15,8 @@
     .page-content-subtitle {
         font-size: $font-size-base + 4px;
         color: $font-colour-light;
-        max-width: $max-content-width;
-        padding: $padding-base;
 
-        p:not(:first-of-type) {
+        p {
             margin-top: $margin-base;
         }
     }

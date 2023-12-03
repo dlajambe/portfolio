@@ -1,0 +1,15 @@
+.section-dark {
+    padding: 2*$padding-base 2*$padding-base;
+    background-color: $background-colour-dark;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.section-light {
+    padding: 2*$padding-base 2*$padding-base;
+    background-color: $background-colour-light;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}

@@ -1,126 +1,30 @@
 {% extends 'base.html' %}
 {% block title %}Publications{% endblock %}
 {% block content %}
-<section class="page-header">
-  <div class="page-header-content">
-    <div class="page-header-left">
-      <div class="page-header-text">
-        <div class="page-header-text-large">
-          Publications
-        </div>
-        <div class="page-header-text-medium">
-          My academic publications
+<section class="section-light">
+  <div class="page-header container">
+    <div class="page-header-content">
+      <div class="page-header-left">
+        <div class="page-header-text">
+          <div class="page-header-text-large">
+            Publications
+          </div>
+          <div class="page-header-text-medium">
+            My academic publications
+          </div>
         </div>
       </div>
-    </div>
-    <div class="page-header-right">
-
-    </div>
-</div>
-</section>
-<section class="page-content">
-  <div class="page-content-title">
-    Publications
+      <div class="page-header-right">
+  
+      </div>
   </div>
 </section>
-
-<div class="card-grid">
-  <div class="card">
-    <div class="card-graphic">
-      <img src="{{url_for('static', filename='images/shakespeare.png')}}" align="middle" alt="Shakespeare"/>
+<section class="section-dark">
+  <div class="page-content container">
+    <div class="page-content-title">
+      Publications
     </div>
-    <div class="card-text">
-      <div class="card-title">
-        Shakesperean playwright
-      </div>
-      <div class="card-body">
-        A large language model that generates novel Shakespearean scripts.
-      </div>
-    </div>
-  </div>
-  <div class="card">
-    <div class="card-graphic">
-      <img src="{{url_for('static', filename='images/shakespeare.png')}}" align="middle" alt="Shakespeare"/>
-    </div>
-    <div class="card-text">
-      <div class="card-title">
-        Shakesperean playwright
-      </div>
-      <div class="card-body">
-        A large language model that generates novel Shakespearean scripts.
-      </div>
-    </div>
-  </div>
-  <div class="card">
-    <div class="card-graphic">
-      <img src="{{url_for('static', filename='images/shakespeare.png')}}" align="middle" alt="Shakespeare"/>
-    </div>
-    <div class="card-text">
-      <div class="card-title">
-        Shakesperean playwright
-      </div>
-      <div class="card-body">
-        A large language model that generates novel Shakespearean scripts.
-      </div>
-    </div>
-  </div>
-  <div class="card">
-    <div class="card-graphic">
-      <img src="{{url_for('static', filename='images/shakespeare.png')}}" align="middle" alt="Shakespeare"/>
-    </div>
-    <div class="card-text">
-      <div class="card-title">
-        Shakesperean playwright
-      </div>
-      <div class="card-body">
-        A large language model that generates novel Shakespearean scripts.
-      </div>
-    </div>
-  </div>
-  <div class="card">
-    <div class="card-graphic">
-      <img src="{{url_for('static', filename='images/shakespeare.png')}}" align="middle" alt="Shakespeare"/>
-    </div>
-    <div class="card-text">
-      <div class="card-title">
-        Shakesperean playwright
-      </div>
-      <div class="card-body">
-        A large language model that generates novel Shakespearean scripts.
-      </div>
-    </div>
-  </div>
-  <div class="card">
-    <div class="card-graphic">
-      <img src="{{url_for('static', filename='images/shakespeare.png')}}" align="middle" alt="Shakespeare"/>
-    </div>
-    <div class="card-text">
-      <div class="card-title">
-        Shakesperean playwright
-      </div>
-      <div class="card-body">
-        A large language model that generates novel Shakespearean scripts.
-      </div>
-    </div>
-  </div>
-  <div class="card">
-    <div class="card-graphic">
-      <img src="{{url_for('static', filename='images/shakespeare.png')}}" align="middle" alt="Shakespeare"/>
-    </div>
-    <div class="card-text">
-      <div class="card-title">
-        Shakesperean playwright
-      </div>
-      <div class="card-body">
-        A large language model that generates novel Shakespearean scripts.
-      </div>
-    </div>
-  </div>
-</div>
-<!-- 
-<div class="container-xs container-sm container-md container-lg container-xl">
-  <div class="row gap-1 justify-center">
-    <div class="col-12-xs col-6-md col-4-lg">
+    <div class="card-grid">
       <div class="card">
         <div class="card-graphic">
           <img src="{{url_for('static', filename='images/shakespeare.png')}}" align="middle" alt="Shakespeare"/>
@@ -134,8 +38,6 @@
           </div>
         </div>
       </div>
-    </div>
-    <div class="col-12-xs col-6-md col-4-lg">
       <div class="card">
         <div class="card-graphic">
           <img src="{{url_for('static', filename='images/shakespeare.png')}}" align="middle" alt="Shakespeare"/>
@@ -149,8 +51,6 @@
           </div>
         </div>
       </div>
-    </div>
-    <div class="col-12-xs col-6-md col-4-lg">
       <div class="card">
         <div class="card-graphic">
           <img src="{{url_for('static', filename='images/shakespeare.png')}}" align="middle" alt="Shakespeare"/>
@@ -164,8 +64,6 @@
           </div>
         </div>
       </div>
-    </div>
-    <div class="col-12-xs col-6-md col-4-lg">
       <div class="card">
         <div class="card-graphic">
           <img src="{{url_for('static', filename='images/shakespeare.png')}}" align="middle" alt="Shakespeare"/>
@@ -179,8 +77,6 @@
           </div>
         </div>
       </div>
-    </div>
-    <div class="col-12-xs col-6-md col-4-lg">
       <div class="card">
         <div class="card-graphic">
           <img src="{{url_for('static', filename='images/shakespeare.png')}}" align="middle" alt="Shakespeare"/>
@@ -194,8 +90,19 @@
           </div>
         </div>
       </div>
-    </div>
-    <div class="col-12-xs col-6-md col-4-lg">
+      <div class="card">
+        <div class="card-graphic">
+          <img src="{{url_for('static', filename='images/shakespeare.png')}}" align="middle" alt="Shakespeare"/>
+        </div>
+        <div class="card-text">
+          <div class="card-title">
+            Shakesperean playwright
+          </div>
+          <div class="card-body">
+            A large language model that generates novel Shakespearean scripts.
+          </div>
+        </div>
+      </div>
       <div class="card">
         <div class="card-graphic">
           <img src="{{url_for('static', filename='images/shakespeare.png')}}" align="middle" alt="Shakespeare"/>
@@ -211,5 +118,5 @@
       </div>
     </div>
   </div>
-</div> -->
+</section>
 {% endblock %}

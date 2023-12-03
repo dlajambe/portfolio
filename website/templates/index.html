@@ -1,8 +1,8 @@
 {% extends 'base.html' %}
 {% block title %}Home{% endblock %}
 {% block content %}
-<section class="page-header">
-  <div class="page-header-content">
+<section class="section-light">
+  <div class="page-header container">
     <div class="page-header-left">
       <div class="page-header-text">
         <div class="page-header-text-large">
@@ -23,98 +23,77 @@
     </div>
   </div>
 </section>
-<!-- <section class="home-about">
-  <div class="home-about-content">
-    <div class="home-about-bio">
-      <div class="home-about-bio-text">
-        <h1>About me</h1>
-        <h2>Hi there! I am David - a data scientist / software developer based in Toronto, Canada.</h2>
-        <p>Since 2014, I have enjoyed using data to generate value for companies. My
-          passion is designing, developing, and deploying cutting-edge machine learning 
-          and optimization applications.</p>
-      </div>
-      <a class="button" href="/about">Learn More</a>
+<section class="section-dark">
+  <div class="page-content container">
+    <div class="page-content-title">
+      Hi, I'm David.
     </div>
-    <div class="home-about-skills">
-      <h1>Skills</h1>
-      <h2>C++</h2>
-      <h2>Python</h2>
-      <h2>Azure</h2>
-    </div>
-  </div>
-</section> -->
-<section class="page-content">
-  <div class="page-content-title">
-    Hi, I'm David.
-  </div>
-  <div class="page-content-subtitle">
-    <p>
-      Since 2014, I have enjoyed using data to generate value for companies. My
-      passion is designing, developing, and deploying cutting-edge machine learning, AI, 
-      and optimization applications.
-    </p>
-    <p>
-      In addition to my industrial work, I also have several academic 
-      <a class="hyperlink" href="/publications">publications </a>
-      on the use of machine learning for process fault detection in the aluminum
-      smelting industry.
-    </p>
-
-  </div>
+    <div class="page-content-subtitle">
+      <p>
+        Since 2014, I have enjoyed using data to generate value for companies. My
+        passion is designing, developing, and deploying cutting-edge machine learning, AI, 
+        and optimization applications.
+      </p>
+      <p>
+        In addition to my industrial work, I also have several academic 
+        <a class="hyperlink" href="/publications">publications </a>
+        on the use of machine learning for process fault detection in the aluminum
+        smelting industry.
+      </p>
   
-  <a class="button", href="/about">About me</a>
-</section>
-
-<section class="page-content">
-  <div class="page-content-title">
-    My Recent Work
-  </div>
-  <div class="page-content-subtitle">
-    I build and deploy a variety of open-source projects. Try out some of my recent projects for yourself!  
-  </div>
-  <div class="card-grid">
-    <div class="card">
-      <div class="card-graphic">
-        <img src="{{url_for('static', filename='images/shakespeare.png')}}" align="middle" alt="Shakespeare"/>
-      </div>
-      <div class="card-text">
-        <div class="card-title">
-          Shakesperean playwright
+    </div>
+    
+    <a class="button", href="/about">About me</a>
+    <div class="page-content-title">
+      My Recent Work
+    </div>
+    <div class="page-content-subtitle">
+      I build and deploy a variety of open-source projects. Try out some of my recent projects for yourself!  
+    </div>
+    <div class="card-grid">
+      <div class="card">
+        <div class="card-graphic">
+          <img src="{{url_for('static', filename='images/shakespeare.png')}}" align="middle" alt="Shakespeare"/>
         </div>
-        <div class="card-body">
-          A large language model that generates novel Shakespearean scripts.
+        <div class="card-text">
+          <div class="card-title">
+            Shakesperean playwright
+          </div>
+          <div class="card-body">
+            A large language model that generates novel Shakespearean scripts.
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-graphic">
+          <img src="{{url_for('static', filename='images/delivery.png')}}" align="middle" alt="delivery"/>
+        </div>
+        <div class="card-text">
+          <div class="card-title">
+            Courrier Route Optimizer
+          </div>
+          <div class="card-body">
+            An metaheuristic optimization engine that solves for efficient package delivery routes.
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-graphic">
+          <img src="{{url_for('static', filename='images/cool-background.png')}}" align="middle" alt="Shakespeare"/>
+        </div>
+        <div class="card-text">
+          <div class="card-title">
+            Fantasy Soundtrack Composer
+          </div>
+          <div class="card-body">
+            A transformer-based deep neural net that composes fantasy-themed music.
+          </div>
         </div>
       </div>
     </div>
-    <div class="card">
-      <div class="card-graphic">
-        <img src="{{url_for('static', filename='images/delivery.png')}}" align="middle" alt="delivery"/>
-      </div>
-      <div class="card-text">
-        <div class="card-title">
-          Courrier Route Optimizer
-        </div>
-        <div class="card-body">
-          An metaheuristic optimization engine that solves for efficient package delivery routes.
-        </div>
-      </div>
+    <div class="projects-button">
+      <a class="button" href="/projects">More projects</a>
     </div>
-    <div class="card">
-      <div class="card-graphic">
-        <img src="{{url_for('static', filename='images/cool-background.png')}}" align="middle" alt="Shakespeare"/>
-      </div>
-      <div class="card-text">
-        <div class="card-title">
-          Fantasy Soundtrack Composer
-        </div>
-        <div class="card-body">
-          A transformer-based deep neural net that composes fantasy-themed music.
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="projects-button">
-    <a class="button" href="/projects">More projects</a>
   </div>
 </section>
 

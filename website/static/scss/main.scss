@@ -2,6 +2,7 @@
 @import '_breakpoints';
 
 // Components
+@import 'components/_section';
 @import 'components/_button';
 @import 'components/_card';
 @import 'components/_hyperlink';
@@ -9,6 +10,7 @@
 @import 'components/_page_footer';
 @import 'components/_page_header';
 @import 'components/_page_content';
+@import 'components/_container';
 
 @import '_base';
 @import '_index';

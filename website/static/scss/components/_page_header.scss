@@ -1,67 +1,55 @@
 .page-header {
-    margin-top: $navbar-height;
-    background-color: $background-colour-light;
     height: 550px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     // box-shadow: 1px 1px 1px 1px rgba(33,33,33,.2);
     // box-sizing: border-box;
+    padding: $padding-base;
+    display: flex;
+    align-items: center;
+    gap: 50px;
 
-    .page-header-content {
-        padding: $padding-base;
+    .page-header-left {
         display: flex;
+        flex-direction: column;
         align-items: center;
         gap: 50px;
 
-        .page-header-left {
+        .page-header-text {
             display: flex;
             flex-direction: column;
-            align-items: center;
-            gap: 50px;
+            align-items: left;
+            gap: 25px;
 
-            .page-header-text {
-                display: flex;
-                flex-direction: column;
-                align-items: left;
-                @include md {
-                    width: 40vw;
-                }
-                gap: 25px;
-    
-                .page-header-text-large {
-                    font-size: 70px;
-                    font-weight: $font-weight-bold;
-                    color: $font-colour-dark;
-                }
-    
-                .page-header-text-medium {
-                    font-size: 35px;
-                    color: $font-colour-light;
-                }
-    
-                .page-header-text-small {
-                    font-size: 25px;
-                    color: $font-colour-light;
-                }
+            .page-header-text-large {
+                font-size: 70px;
+                font-weight: $font-weight-bold;
+                color: $font-colour-dark;
+            }
+
+            .page-header-text-medium {
+                font-size: 35px;
+                color: $font-colour-light;
+            }
+
+            .page-header-text-small {
+                font-size: 25px;
+                color: $font-colour-light;
             }
         }
+    }
 
-        .page-header-right {
-            .page-header-image {
-                height: 400px;
-                width: 300px;
-                display: none;
-                @include md {
-                    display: block;
-                }
-                img {
-                    height: 100%;
-                    width: 100%;
-                    object-fit: cover;
-                    border-radius: $border-radius-base;
-                }
+    .page-header-right {
+        .page-header-image {
+            height: 400px;
+            width: 300px;
+            display: none;
+            @include md {
+                display: block;
+            }
+            img {
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+                border-radius: $border-radius-base;
             }
         }
     }

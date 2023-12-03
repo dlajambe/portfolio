@@ -1,55 +1,59 @@
 {% extends "base.html" %}
 {% block title %}About{% endblock %}
 {% block content %}
-<section class="page-header">
-  <div class="page-header-content">
-    <div class="page-header-left">
-      <div class="page-header-text">
-        <div class="page-header-text-large">
-        About Me
-        </div>
-        <div class="page-header-text-medium">
-        David LaJambe - Software Developer & Machine Learning Engineer
-        </div>
-        <div class="page-header-text-small">
-        Since 2014, I have enjoyed using data to generate value for companies. My
-        passion is designing, developing, and deploying cutting-edge machine learning, AI,  
-        and optimization applications.
+<section class="section-light center-vertically">
+  <div class="page-header container">
+    <div class="page-header-content">
+      <div class="page-header-left">
+        <div class="page-header-text">
+          <div class="page-header-text-large">
+          About Me
+          </div>
+          <div class="page-header-text-medium">
+          David LaJambe - Software Developer & Machine Learning Engineer
+          </div>
+          <div class="page-header-text-small">
+          Since 2014, I have enjoyed using data to generate value for companies. My
+          passion is designing, developing, and deploying cutting-edge machine learning, AI,  
+          and optimization applications.
+          </div>
         </div>
       </div>
-    </div>
-    <div class="page-header-right">
-      
+      <div class="page-header-right">
+        
+      </div>
     </div>
   </div>
 </section>
-<section class="page-content">
-  <div class="page-content-title">
-    My Skills
-  </div>
-  <div class="skills">
-    <div class="skill-box">
-      <div class="skill-box-icon">
-        <img src="{{url_for('static', filename='images/icon-software.png')}}" alt="icon-software"/>
-      </div>
-      <div class="skill-box-title">
-        Software Development
-      </div>
+<section class="section-dark center-vertically">
+  <div class="page-content container">
+    <div class="page-content-title">
+      My Skills
     </div>
-    <div class="skill-box">
-      <div class="skill-box-icon">
-        <img src="{{url_for('static', filename='images/icon-ml.png')}}" alt="icon-ml"/>
+    <div class="skills">
+      <div class="skill-box">
+        <div class="skill-box-icon">
+          <img src="{{url_for('static', filename='images/icon-software.png')}}" alt="icon-software"/>
+        </div>
+        <div class="skill-box-title">
+          Software Development
+        </div>
       </div>
-      <div class="skill-box-title">
-        Machine Learning
+      <div class="skill-box">
+        <div class="skill-box-icon">
+          <img src="{{url_for('static', filename='images/icon-ml.png')}}" alt="icon-ml"/>
+        </div>
+        <div class="skill-box-title">
+          Machine Learning
+        </div>
       </div>
-    </div>
-    <div class="skill-box">
-      <div class="skill-box-icon">
-        <img src="{{url_for('static', filename='images/icon-deployment.png')}}" alt="icon-deployment"/>
-      </div>
-      <div class="skill-box-title">
-        Model Deployment
+      <div class="skill-box">
+        <div class="skill-box-icon">
+          <img src="{{url_for('static', filename='images/icon-deployment.png')}}" alt="icon-deployment"/>
+        </div>
+        <div class="skill-box-title">
+          Model Deployment
+        </div>
       </div>
     </div>
   </div>
