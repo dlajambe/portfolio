@@ -26,9 +26,25 @@
 
     .nav-menu {
         display: none; // Display is turned on only above certain screen size
+        align-items: center;
         list-style: none;
         padding: 0 $navlink-padding;
         
+        .nav-item {
+            display: flex;
+            align-items: center;
+            gap: $padding-base;
+            .nav-social {
+                height: 25px;
+                width: 25px;
+                img {
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+
         .nav-item:not(:first-of-type) {
             margin-left: $margin-base + 1.25rem;
         }

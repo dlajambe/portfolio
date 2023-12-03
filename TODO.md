@@ -30,4 +30,3 @@
 - Navbar shifting due to vertical scroll bar appearing on longer pages
 - Use ID to differentiate between sections once OO CSS is
 implemented
-- Add social media handles: Git and LinkedIn
