@@ -1,12 +1,6 @@
 # CSS/SASS refactoring
-- Create container class
-- Create card class
-- Create grid class
-- Add classes to separate library file(s)/folder(s)
-- Get the header elements to line up perfectly on each page
 - Create "skill" class for home page skills 
 - Project case study class
-- Refactor flexbox types into classes or SASS macros to avoid CSS repetition
 - Improve colour variables i.e. dark text colour, light text colour, primary colour, secondary colour, etc.
 - Create a separate template with all project thumbnails
 

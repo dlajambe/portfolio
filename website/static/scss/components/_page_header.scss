@@ -1,26 +1,27 @@
 .page-header {
-    height: 550px;
     // box-shadow: 1px 1px 1px 1px rgba(33,33,33,.2);
     // box-sizing: border-box;
-    padding: $padding-base;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    gap: 50px;
+    min-height: 450px;
+    gap: 3*$padding-base;
 
     .page-header-left {
         display: flex;
         flex-direction: column;
-        align-items: center;
-        gap: 50px;
+        justify-content: center;
 
         .page-header-text {
             display: flex;
             flex-direction: column;
-            align-items: left;
-            gap: 25px;
+            text-align: center;
+            align-items: center;
+            gap: $padding-base;
 
             .page-header-text-large {
-                font-size: 70px;
+                font-size: 65px;
                 font-weight: $font-weight-bold;
                 color: $font-colour-dark;
             }
@@ -34,7 +35,19 @@
                 font-size: 25px;
                 color: $font-colour-light;
             }
+
+            .page-header-avatar {
+                height: 100px;
+                width: 100px;
+                img {
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                    border-radius: 1000*$border-radius-base;
+                }
+            }
         }
+
     }
 
     .page-header-right {
@@ -42,14 +55,35 @@
             height: 400px;
             width: 300px;
             display: none;
-            @include md {
-                display: block;
-            }
             img {
                 height: 100%;
                 width: 100%;
                 object-fit: cover;
                 border-radius: $border-radius-base;
+            }
+        }
+    }
+}
+
+// At medium screens and larger, the avatar becomes a full picture
+@include md {
+    .page-header {
+        flex-direction: row;
+        .page-header-left {
+
+            .page-header-text {
+                text-align: left;
+                align-items: start;
+
+                .page-header-avatar {
+                    display: none;
+                }
+            }
+        }
+
+        .page-header-right {
+            .page-header-image {
+                display: block;
             }
         }
     }
