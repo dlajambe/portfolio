@@ -15,7 +15,6 @@
     transition: box-shadow 0.3s;
     border: 1px solid $border-colour;
     border-radius: $border-radius-base / 2;
-    height: 350px;
     padding: $padding-base;
     box-sizing: border-box;
 
@@ -52,30 +51,35 @@
 
 @include xs {
     .card {
-        flex: 0 1 95%; // 1 column
+        flex: 0 1 90%; // 1 column
+        height: 350px;
     }
 }
 
 @include sm {
     .card {
-        flex: 0 1 95%; // 1 column
+        flex: 0 1 90%; // 1 column
+        height: 400px;
     }
 }
 
 @include md {
     .card {
-        flex: 0 1 46%; // 2 columns
+        flex: 0 1 45%; // 2 columns
+        height: 350px;
     }
 }
 
 @include lg {
     .card {
         flex: 0 1 30%; // 3 columns
+        height: 400px;
     }
 }
 
 @include xl {
     .card {
         flex: 0 1 30%; // 3 columns
+        height: 350px;
     }
 }
