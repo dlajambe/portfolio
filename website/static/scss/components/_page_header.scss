@@ -40,22 +40,18 @@
             .page-header-avatar {
                 height: 100px;
                 width: 100px;
-                img {
-                    height: 100%;
-                    width: 100%;
-                    object-fit: cover;
-                    border-radius: 1000*$border-radius-base;
-                }
+                object-fit: cover;
+                border-radius: 1000*$border-radius-base;
             }
         }
 
     }
 
     .page-header-right {
+        display: none;
         .page-header-image {
             height: 400px;
             width: 300px;
-            display: none;
             img {
                 height: 100%;
                 width: 100%;
@@ -83,9 +79,7 @@
         }
 
         .page-header-right {
-            .page-header-image {
-                display: block;
-            }
+            display: block;
         }
     }
 }

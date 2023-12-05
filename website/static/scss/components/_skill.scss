@@ -1,0 +1,62 @@
+.skill-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+.skill-box {
+    display: flex;
+    flex-direction: column;
+    background-color: $background-colour-light;
+    border: 1px solid $border-colour;
+    height: 500px;
+    flex: 0 1 90%; // 1 column
+    padding: $padding-base;
+
+    .skill-box-icon {
+        height: 60px;
+        width: 60px;
+        align-self: center;
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: contain;
+        }
+    }
+
+    .skill-box-title {
+        font-size: $font-size-base + 4px;
+        font-weight: $font-weight-bold;
+        text-align: center;
+    }
+}
+
+.skill-box:first-of-type {
+    border-top-left-radius: $border-radius-base;
+    border-top-right-radius: $border-radius-base;
+}
+
+.skill-box:last-of-type {
+    border-bottom-right-radius: $border-radius-base;
+    border-bottom-left-radius: $border-radius-base;
+}
+
+@include lg {
+    .skill-box:first-of-type {
+        border-top-left-radius: $border-radius-base;
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: $border-radius-base;
+    }
+    
+    .skill-box:last-of-type {
+        border-top-right-radius: $border-radius-base;
+        border-bottom-right-radius: $border-radius-base;
+        border-bottom-left-radius: 0px;
+    }
+
+    .skill-box {
+        flex: 0 1 30%; // 3 columns
+        height: 650px;
+    }
+}

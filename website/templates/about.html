@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 {% block title %}About{% endblock %}
 {% block content %}
-<section class="section-light center-vertically">
+<section class="section-light">
   <div class="page-header container">
     <div class="page-header-content">
       <div class="page-header-left">
@@ -25,12 +25,12 @@
     </div>
   </div>
 </section>
-<section class="section-dark center-vertically">
+<section class="section-dark">
   <div class="page-content container">
     <div class="page-content-title">
       My Skills
     </div>
-    <div class="skills">
+    <div class="skill-grid">
       <div class="skill-box">
         <div class="skill-box-icon">
           <img src="{{url_for('static', filename='images/icon-software.png')}}" alt="icon-software"/>
