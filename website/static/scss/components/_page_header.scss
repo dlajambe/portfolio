@@ -6,7 +6,7 @@
     justify-content: center;
     align-items: center;
     min-height: 450px;
-    gap: 3*$padding-base;
+    gap: 4*$padding-base;
 
     .page-header-left {
         display: flex;
@@ -33,7 +33,7 @@
             }
 
             .page-header-text-small {
-                font-size: 25px;
+                font-size: 22px;
                 color: $font-colour-light;
             }
 
@@ -52,11 +52,18 @@
         .page-header-image {
             height: 400px;
             width: 300px;
+
             img {
                 height: 100%;
                 width: 100%;
+            }
+            .img-cover {
                 object-fit: cover;
                 border-radius: $border-radius-base;
+            }
+
+            .img-contain {
+                object-fit: contain;
             }
         }
     }

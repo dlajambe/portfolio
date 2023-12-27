@@ -3,26 +3,32 @@
 {% block content %}
 <section class="section-light">
   <div class="page-header container">
-    <div class="page-header-content">
-      <div class="page-header-left">
-        <div class="page-header-text">
-          <div class="page-header-text-large">
-            Publications
-          </div>
-          <div class="page-header-text-medium">
-            My scientific publications
-          </div>
+    <div class="page-header-left">
+      <div class="page-header-text">
+        <div class="page-header-text-large">
+          Publications
+        </div>
+        <div class="page-header-text-medium">
+          Check out some of my scientific publications.
+        </div>
+        <div class="page-header-text-small">
+          I am passionate about finding new ways to apply AI and machine learning techniques. As a graduate student, I
+          had the opportunity to author several papers on the use of machine learning for fault detection in
+          the aluminum smelting process.
         </div>
       </div>
-      <div class="page-header-right">
-  
+    </div>
+    <div class="page-header-right">
+      <div class="page-header-image">
+        <img class="img-contain" src="{{url_for('static', filename='images/publications/papers.png')}}" alt="Papers"/>
       </div>
+    </div>
   </div>
 </section>
 <section class="section-dark">
   <div class="page-content container">
     <div class="page-content-title">
-      Publications
+      My Publications
     </div>
     <div class="card-grid">
       <div class="card", onclick="window.open('https://www.sciencedirect.com/science/article/abs/pii/S0892687521003733');">
