@@ -33,7 +33,7 @@
         .nav-item {
             display: flex;
             align-items: center;
-            gap: $padding-base;
+            gap: $padding-base * 2;
             .nav-social {
                 height: 25px;
                 width: 25px;
