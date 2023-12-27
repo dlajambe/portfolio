@@ -47,7 +47,7 @@
 @include xs {
     .card {
         flex: 0 1 90%; // 1 column
-        height: 350px;
+        height: 400px;
     }
 }
 
@@ -61,7 +61,7 @@
 @include md {
     .card {
         flex: 0 1 45%; // 2 columns
-        height: 350px;
+        height: 400px;
     }
 }
 

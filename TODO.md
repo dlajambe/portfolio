@@ -1,4 +1,5 @@
 # CSS/SASS refactoring
+- Modify Card class so that image aspect ratio does not change with screen size
 - Create "skill" class for home page skills 
 - Project case study class
 - Improve colour variables i.e. dark text colour, light text colour, primary colour, secondary colour, etc.
