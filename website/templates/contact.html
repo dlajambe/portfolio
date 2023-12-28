@@ -3,24 +3,38 @@
 {% block content %}
 <section class="section-light">
   <div class="page-header container">
-    <div class="page-header-content">
-      <div class="page-header-left">
-        <div class="page-header-text">
-          <div class="page-header-text-large">
-            Contact Me
-          </div>
-          <div class="page-header-text-medium">
-            Have a question or comment?
-          </div>
-          <div class="page-header-text-small">
-            Reach out to me via LinkedIn or email.
-          </div>
+    <div class="page-header-left">
+      <div class="page-header-text">
+        <div class="page-header-text-large">
+          Contact Me
+        </div>
+        <div class="page-header-text-medium">
+          Have a question or comment?
+        </div>
+        <div class="page-header-text-small">
+          Reach out to me through email or <a class="hyperlink" href="https://www.linkedin.com/in/david-lajambe/" target="_blank">LinkedIn</a>.
         </div>
       </div>
-      <div class="page-header-right">
-        
+    </div>
+    <div class="page-header-right">
+      <div class="page-header-image">
+        <img class="img-contain" src="{{url_for('static', filename='images/contact/envelope.png')}}" alt="envelope"/>
       </div>
     </div>
   </div>
+</section>
+<section class="section-dark">
+  <form class="page-content container">
+    <div class="page-content-title">
+      Send me an email
+    </div>
+    <div class="contact-form">
+      <input class="field" type="text" name="first-name" placeholder="First name" autocomplete="off" required>
+      <input class="field" type="text" name="last-name" placeholder="Last name" autocomplete="off" required>
+      <input class="field" type="text" name="email" placeholder="Email address (eg. johndoe@gmail.com)" autocomplete="off" required>
+      <textarea class="field" rows="5" cols="1337" maxlength="1500" type="text" name="message" placeholder="Message" autocomplete="off" required></textarea>
+      <button class="button" type="submit">Send email</button>
+    </div>
+  </form>
 </section>
 {% endblock %}

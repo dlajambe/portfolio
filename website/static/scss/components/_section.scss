@@ -1,15 +1,16 @@
-.section-dark {
+@mixin section {
     padding: 2*$padding-base 2*$padding-base;
-    background-color: $background-colour-dark;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
+.section-dark {
+    background-color: $background-colour-dark;
+    @include section();
+}
+
 .section-light {
-    padding: 2*$padding-base 2*$padding-base;
     background-color: $background-colour-light;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    @include section();
 }

@@ -1,13 +1,14 @@
 // Global styling variables
 $accent-colour: #7d31d6;
+$accent-colour-light: lighten($accent-colour, 20%);
 // $accent-colour: #6926c1;
 
 $font-colour-light: #707070;
 $font-colour-dark: #333333;
 
+// TODO: Add background-colour-medium
 $background-colour-light: white;
 $background-colour-dark: #F8F8F8;
-
 $border-colour: #cfcfcf;
 
 $font-family: 'Montserrat', 'eurostile', 'europa', 'Source Sans Pro', sans-serif;

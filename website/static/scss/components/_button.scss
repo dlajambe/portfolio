@@ -1,15 +1,17 @@
 .button {
-    background-color: $background-colour-light;
+    background-color: $accent-colour;
     border-color: $accent-colour;
-    color: $accent-colour;
+    color: white;
     border: 2px solid $accent-colour;
     border-radius: $border-radius-base / 2;
     padding: $padding-base;
     cursor: pointer;
     transition: background-color 0.2s;
     text-decoration: none;
+    text-align: center;
+    
     &:hover {
-        background-color: $accent-colour;
-        color: white;
+        background-color: $background-colour-light;
+        color: $accent-colour;
     }
 }
