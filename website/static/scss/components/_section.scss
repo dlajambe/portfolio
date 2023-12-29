@@ -4,6 +4,19 @@
     flex-direction: column;
     justify-content: center;
     position: relative;
+    box-shadow: 0 0 4px 2px rgba(33,33,33,.2); 
+}
+
+.section-light {
+    background-color: $background-colour-light;
+    @include section();
+    z-index: 3;
+}
+
+.section-medium {
+    background-color: $background-colour-medium;
+    @include section();
+    z-index: 2;
 }
 
 .section-dark {
@@ -12,9 +25,30 @@
     z-index: 1;
 }
 
-.section-light {
-    background-color: $background-colour-light;
-    @include section();
-    box-shadow: 0 4px 4px -4px rgba(33,33,33,.2); 
-    z-index: 2;
+// TODO: This is only being used to make sure the entire screen is covered with
+// content because the contact.html template is not finished. These can 
+// be removed once the emmail form is functional.
+@include xs {
+    .section-medium {
+        min-height: 250px;
+    }
+}
+
+
+@include md {
+    .section-medium {
+        min-height: 650px;
+    }
+}
+
+@include lg {
+    .section-medium {
+        min-height: 800px;
+    }
+}
+
+@include xl {
+    .section-medium {
+        min-height: 350px;
+    }
 }

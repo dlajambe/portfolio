@@ -1,6 +1,5 @@
 .page-footer {
-    background-color: black;
-    color: white;
+    background-color: $background-colour-dark;
     display: flex;
     flex-direction: column;
     padding: $padding-base $padding-base;

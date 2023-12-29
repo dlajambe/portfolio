@@ -6,10 +6,11 @@ $accent-colour-light: #D0B6F0;
 $font-colour-light: #707070;
 $font-colour-dark: #333333;
 
-// TODO: Add background-colour-medium
 $background-colour-light: white;
-$background-colour-dark: #F8F8F8;
-$border-colour: #cfcfcf;
+$background-colour-medium: #F8F8F8;
+$background-colour-dark: darken($background-colour-medium, 10%);
+// $border-colour: #cfcfcf;
+$border-colour: darken($background-colour-dark, 10%);
 
 $font-family: 'Montserrat', 'eurostile', 'europa', 'Source Sans Pro', sans-serif;
 $font-size-base: 16px;
