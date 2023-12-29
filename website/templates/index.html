@@ -47,9 +47,6 @@
     <a href="/about">
       <button class="button">About me</button>
     </a>
-    <!-- Add back when there are more than 3 projects <div class="projects-button">
-      <a class="button" href="/projects">More projects</a>
-    </div> -->
   </div>
 </section>
 
@@ -63,16 +60,16 @@
       <a class="hyperlink" href="/contact">Contact me</a>.
     </div>
     <div class="card-grid">
-      <div class="card">
+      <div class="card", onclick="window.open('https://github.com/dlajambe/llm-from-scratch');">
         <div class="card-graphic">
           <img src="{{url_for('static', filename='images/projects/shakespeare.png')}}" align="middle" alt="Shakespeare"/>
         </div>
         <div class="card-text">
           <div class="card-title">
-            Shakesperean playwright
+            LLM from Scratch
           </div>
           <div class="card-body">
-            A large language model that generates novel Shakespearean scripts.
+            Building a generative language model from Scratch in PyTorch.
           </div>
         </div>
       </div>
