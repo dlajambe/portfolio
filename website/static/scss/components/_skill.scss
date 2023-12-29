@@ -12,16 +12,21 @@
     border: 1px solid $border-colour;
     height: 500px;
     flex: 0 1 90%; // 1 column
-    padding: $padding-base;
+    padding-top: 4*$padding-base;
+    padding-bottom: 4*$padding-base;
+    padding-left: $padding-base;
+    padding-left: $padding-base;
+    gap: $padding-base;
 
     .skill-box-icon {
-        height: 60px;
-        width: 60px;
+        height: 70px;
+        width: 70px;
         align-self: center;
         img {
             height: 100%;
             width: 100%;
             object-fit: contain;
+            border-radius: 900px;
         }
     }
 

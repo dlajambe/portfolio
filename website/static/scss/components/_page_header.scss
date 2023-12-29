@@ -1,12 +1,13 @@
+$min-page-header-height: 450px;
+
 .page-header {
     // box-shadow: 1px 1px 1px 1px rgba(33,33,33,.2);
     // box-sizing: border-box;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 450px;
-    gap: 4*$padding-base;
+    min-height: $min-page-header-height;
+    gap: 6*$padding-base;
 
     .page-header-left {
         display: flex;
@@ -50,20 +51,25 @@
     .page-header-right {
         display: none;
         .page-header-image {
-            height: 400px;
-            width: 300px;
+            height: $min-page-header-height - 100px;
+            width: $min-page-header-height - 100px;
+            display: flex;
 
             img {
-                height: 100%;
-                width: 100%;
-            }
-            .img-cover {
-                object-fit: cover;
-                border-radius: $border-radius-base;
+                max-height: 100%;
+                max-width: 100%;
             }
 
+            .img-cover {
+                object-fit: cover;
+            }
+            
             .img-contain {
                 object-fit: contain;
+            }
+            
+            .img-rounded {
+                border-radius: $border-radius-base;
             }
         }
     }
@@ -87,6 +93,21 @@
 
         .page-header-right {
             display: block;
+            .page-header-image {
+                height: $min-page-header-height - 200px;
+                width: $min-page-header-height - 200px;
+            }
+        }
+    }
+}
+
+@include xl {
+    .page-header {
+        .page-header-right {
+            .page-header-image {
+                height: $min-page-header-height - 125px;
+                width: $min-page-header-height - 125px;
+            }
         }
     }
 }

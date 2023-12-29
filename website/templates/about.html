@@ -3,24 +3,24 @@
 {% block content %}
 <section class="section-light">
   <div class="page-header container">
-    <div class="page-header-content">
-      <div class="page-header-left">
-        <div class="page-header-text">
-          <div class="page-header-text-large">
-          About Me
-          </div>
-          <div class="page-header-text-medium">
-          David LaJambe - Software Developer & Machine Learning Engineer
-          </div>
-          <div class="page-header-text-small">
-          Since 2014, I have enjoyed using data to generate value for companies. My
-          passion is designing, developing, and deploying cutting-edge machine learning, AI,  
-          and optimization applications.
-          </div>
+    <div class="page-header-left">
+      <div class="page-header-text">
+        <div class="page-header-text-large">
+        About Me
+        </div>
+        <div class="page-header-text-medium">
+        David LaJambe - Software Developer & Machine Learning Engineer
+        </div>
+        <div class="page-header-text-small">
+        Since 2014, I have enjoyed using data to generate value for companies. My
+        passion is designing, developing, and deploying cutting-edge machine learning, AI,  
+        and optimization applications.
         </div>
       </div>
-      <div class="page-header-right">
-        
+    </div>
+    <div class="page-header-right">
+      <div class="page-header-image">
+        <img class="img-contain img-rounded" src="{{url_for('static', filename='images/about/bench.jpg')}}" alt="bench"/>
       </div>
     </div>
   </div>
@@ -33,7 +33,7 @@
     <div class="skill-grid">
       <div class="skill-box">
         <div class="skill-box-icon">
-          <img src="{{url_for('static', filename='images/icon-software.png')}}" alt="icon-software"/>
+          <img src="{{url_for('static', filename='images/about/icon-software.jpg')}}" alt="icon-software"/>
         </div>
         <div class="skill-box-title">
           Software Development
@@ -41,7 +41,7 @@
       </div>
       <div class="skill-box">
         <div class="skill-box-icon">
-          <img src="{{url_for('static', filename='images/icon-ml.png')}}" alt="icon-ml"/>
+          <img src="{{url_for('static', filename='images/about/icon-ml.jpg')}}" alt="icon-ml"/>
         </div>
         <div class="skill-box-title">
           Machine Learning
@@ -49,7 +49,7 @@
       </div>
       <div class="skill-box">
         <div class="skill-box-icon">
-          <img src="{{url_for('static', filename='images/icon-deployment.png')}}" alt="icon-deployment"/>
+          <img src="{{url_for('static', filename='images/about/icon-deployment.jpg')}}" alt="icon-deployment"/>
         </div>
         <div class="skill-box-title">
           Model Deployment

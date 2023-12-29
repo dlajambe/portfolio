@@ -27,6 +27,10 @@
 - Add image to page header
 - Add contact form
 
+# Environment
+- Create lean requirements.txt and environment.yml files
+- Switch to venv
+
 # Miscellaneous: 
 - Navbar shifting due to vertical scroll bar appearing on longer pages
 - Use ID to differentiate between sections once OO CSS is
