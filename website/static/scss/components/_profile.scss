@@ -1,24 +1,24 @@
-.skill-grid {
+.profile-grid {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     width: 100%;
 }
 
-.skill-box {
+.profile-box {
     display: flex;
     flex-direction: column;
     background-color: $background-colour-light;
     border: 1px solid $border-colour;
-    height: 500px;
     flex: 0 1 90%; // 1 column
     padding-top: 4*$padding-base;
     padding-bottom: 4*$padding-base;
     padding-left: $padding-base;
-    padding-left: $padding-base;
-    gap: $padding-base;
+    padding-right: $padding-base;
+    gap: 2.5*$padding-base;
+    box-shadow: 0 6px 4px -4px rgba(33,33,33,.2); 
 
-    .skill-box-icon {
+    .profile-box-icon {
         height: 70px;
         width: 70px;
         align-self: center;
@@ -30,38 +30,59 @@
         }
     }
 
-    .skill-box-title {
-        font-size: $font-size-base + 4px;
-        font-weight: $font-weight-bold;
+    .profile-box-section {
         text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: $padding-base/2;
+        h1 {
+            font-size: $font-size-base + 6px;
+            font-weight: $font-weight-bold;
+        }
+
+        h2 {
+            font-size: $font-size-base + 2px;
+            font-weight: $font-weight-bold;
+            color: $accent-colour;
+        }
+
+        ul {
+            font-size: $font-size-base + 2px;
+            list-style-type: none;
+            padding: 0px;
+        }
+
+        p {
+            font-size: $font-size-base + 2px;
+        }
     }
 }
 
-.skill-box:first-of-type {
+.profile-box:first-of-type {
     border-top-left-radius: $border-radius-base;
     border-top-right-radius: $border-radius-base;
 }
 
-.skill-box:last-of-type {
+.profile-box:last-of-type {
     border-bottom-right-radius: $border-radius-base;
     border-bottom-left-radius: $border-radius-base;
 }
 
 @include lg {
-    .skill-box:first-of-type {
+    .profile-box:first-of-type {
         border-top-left-radius: $border-radius-base;
         border-top-right-radius: 0px;
         border-bottom-left-radius: $border-radius-base;
     }
     
-    .skill-box:last-of-type {
+    .profile-box:last-of-type {
         border-top-right-radius: $border-radius-base;
         border-bottom-right-radius: $border-radius-base;
         border-bottom-left-radius: 0px;
     }
 
-    .skill-box {
+    .profile-box {
         flex: 0 1 30%; // 3 columns
-        height: 650px;
+        //height: 650px;
     }
 }

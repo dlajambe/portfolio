@@ -4,6 +4,6 @@
     text-decoration: none;
 
     &:hover {
-        color: lighten($accent-colour, 25%);
+        color: $accent-colour-light;
     }
 }

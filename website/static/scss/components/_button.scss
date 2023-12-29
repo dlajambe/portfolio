@@ -9,6 +9,7 @@
     transition: background-color 0.2s;
     text-decoration: none;
     text-align: center;
+    font-size: $font-size-base;
     
     &:hover {
         background-color: $background-colour-light;
