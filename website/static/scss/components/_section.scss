@@ -3,14 +3,18 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    position: relative;
 }
 
 .section-dark {
     background-color: $background-colour-dark;
     @include section();
+    z-index: 1;
 }
 
 .section-light {
     background-color: $background-colour-light;
     @include section();
+    box-shadow: 0 4px 4px -4px rgba(33,33,33,.2); 
+    z-index: 2;
 }
