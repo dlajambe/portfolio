@@ -26,29 +26,9 @@
 }
 
 // TODO: This is only being used to make sure the entire screen is covered with
-// content because the contact.html template is not finished. These can 
-// be removed once the emmail form is functional.
-@include xs {
-    .section-medium {
-        min-height: 250px;
-    }
-}
-
-
-@include md {
-    .section-medium {
-        min-height: 650px;
-    }
-}
-
-@include lg {
-    .section-medium {
-        min-height: 800px;
-    }
-}
-
-@include xl {
-    .section-medium {
-        min-height: 350px;
-    }
+// content because the contact.html template is not finished. This class can be
+// removed from here and from the first section of contact.html once the emmail
+// form is in place.
+.section-full {
+    min-height: 100vh;
 }
