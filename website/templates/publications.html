@@ -20,7 +20,7 @@
     </div>
     <div class="page-header-right">
       <div class="page-header-image">
-        <img class="img-contain" src="{{url_for('static', filename='images/publications/papers.jpg')}}" alt="Papers"/>
+        <img class="img-contain" src="{{url_for('static', filename='images/publications/papers.jpg')}}" alt="papers.jpg"/>
       </div>
     </div>
   </div>
@@ -30,43 +30,55 @@
     <div class="page-content-title">
       My Publications
     </div>
-    <div class="card-grid">
-      <div class="card", onclick="window.open('https://www.sciencedirect.com/science/article/abs/pii/S0892687521003733');">
-        <div class="card-graphic">
-          <img src="{{url_for('static', filename='images/publications/minerals_engineering.png')}}" align="middle" alt="Minerals Engineering"/>
-        </div>
-        <div class="card-text">
-          <div class="card-title">
-            Minerals Engineering - 2021
-          </div>
-          <div class="card-body">
-            Development and economic evaluation of multivariate anodic incident detection systems.
-          </div>
-        </div>
-      </div>
-      <div class="card", onclick="window.open('https://link.springer.com/chapter/10.1007/978-3-030-36408-3_74');">
-        <div class="card-graphic">
-          <img src="{{url_for('static', filename='images/publications/light_metals.png')}}" align="middle" alt="Light Metals"/>
-        </div>
-        <div class="card-text">
-          <div class="card-title">
-            Light Metals - 2020
-          </div>
-          <div class="card-body">
-            Anodic incident detection through multivariate analysis of individual anode current signals.
+    <div class="grid">
+      <div class="card", onclick="window.open('https://www.sciencedirect.com/science/article/abs/pii/S0892687521003733')">
+        <div class="aspect-ratio">
+          <div class="content">
+            <div class="card-graphic">
+              <img src="{{url_for('static', filename='images/publications/minerals_engineering.jpg')}}" align="middle" alt="minerals_engineering.jpg"/>
+            </div>
+            <div class="card-text">
+              <div class="card-title">
+                Minerals Engineering - 2021
+              </div>
+              <div class="card-body">
+                Development and economic evaluation of multivariate anodic incident detection systems.
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <div class="card", onclick="window.open('https://library-archives.canada.ca/eng/services/services-libraries/theses/Pages/item.aspx?idNumber=1153644585');">
-        <div class="card-graphic">
-          <img src="{{url_for('static', filename='images/publications/thesis.png')}}" align="middle" alt="Thesis"/>
-        </div>
-        <div class="card-text">
-          <div class="card-title">
-            Laval University - 2020
+      <div class="card", onclick="window.open('https://link.springer.com/chapter/10.1007/978-3-030-36408-3_74')">
+        <div class="aspect-ratio">
+          <div class="content">
+            <div class="card-graphic">
+              <img src="{{url_for('static', filename='images/publications/light_metals.jpg')}}" align="middle" alt="light_metals.jpg"/>
+            </div>
+            <div class="card-text">
+              <div class="card-title">
+                Light Metals - 2020
+              </div>
+              <div class="card-body">
+                Anodic incident detection through multivariate analysis of individual anode current signals.
+              </div>
+            </div>
           </div>
-          <div class="card-body">
-            Multivariate monitoring of individual anode current signals for anodic incident detection.
+        </div>
+      </div>
+      <div class="card", onclick="window.open('https://library-archives.canada.ca/eng/services/services-libraries/theses/Pages/item.aspx?idNumber=1153644585')">
+        <div class="aspect-ratio">
+          <div class="content">
+            <div class="card-graphic">
+              <img src="{{url_for('static', filename='images/publications/thesis.jpg')}}" align="middle" alt="thesis.jpg"/>
+            </div>
+            <div class="card-text">
+              <div class="card-title">
+                Laval University - 2020
+              </div>
+              <div class="card-body">
+                Multivariate monitoring of individual anode current signals for anodic incident detection.
+              </div>
+            </div>
           </div>
         </div>
       </div>

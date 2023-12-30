@@ -14,12 +14,12 @@
         <div class="page-header-text-small">
           I design, build, and deploy data-driven applications to help organizations prosper.
         </div>
-        <img class="page-header-avatar" src="{{url_for('static', filename='images/index/suit_avatar.jpg')}}" alt="avatar"/>
+        <img class="page-header-avatar" src="{{url_for('static', filename='images/index/suit_avatar.jpg')}}" alt="suit_avatar.jpg"/>
       </div>
     </div>
     <div class="page-header-right">
       <div class="page-header-image">
-        <img class="img-rounded img-contain" src="{{url_for('static', filename='images/index/suit_2_small.jpg')}}" alt="portrait"/>
+        <img class="img-rounded img-contain" src="{{url_for('static', filename='images/index/suit.jpg')}}" alt="suit.jpg"/>
       </div>
     </div>
   </div>
@@ -59,47 +59,43 @@
       Here are some of the projects I have worked on. Have a question?
       <a class="hyperlink" href="/contact">Contact me</a>.
     </div>
-    <div class="card-grid">
-      <div class="card", onclick="window.open('https://github.com/dlajambe/llm-from-scratch');">
-        <div class="card-graphic">
-          <img src="{{url_for('static', filename='images/projects/shakespeare.png')}}" align="middle" alt="Shakespeare"/>
-        </div>
-        <div class="card-text">
-          <div class="card-title">
-            LLM from Scratch
-          </div>
-          <div class="card-body">
-            Building a generative language model from Scratch in PyTorch.
-          </div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-graphic">
-          <img src="{{url_for('static', filename='images/projects/delivery.png')}}" align="middle" alt="delivery"/>
-        </div>
-        <div class="card-text">
-          <div class="card-title">
-            Courrier Route Optimizer
-          </div>
-          <div class="card-body">
-            An metaheuristic optimization engine that solves for efficient package delivery routes.
+    <div class="grid">
+      <div class="card", onclick="window.open('https://github.com/dlajambe/llm-from-scratch')">
+        <div class="aspect-ratio">
+          <div class="content">
+            <div class="card-graphic">
+              <img src="{{url_for('static', filename='images/projects/llm_from_scratch.jpg')}}" align="middle" alt="llm_from_scratch.jpg"/>
+            </div>
+            <div class="card-text">
+              <div class="card-title">
+                LLM from scratch
+              </div>
+              <div class="card-body">
+                Building a generative language model from Scratch in PyTorch.
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <div class="card">
-        <div class="card-graphic">
-          <img src="{{url_for('static', filename='images/projects/cool-background.png')}}" align="middle" alt="runegen"/>
-        </div>
-        <div class="card-text">
-          <div class="card-title">
-            Fantasy Soundtrack Composer
-          </div>
-          <div class="card-body">
-            A transformer-based deep neural net that composes fantasy-themed music.
+      <div class="card", onclick="window.open('https://github.com/dlajambe/portfolio')">
+        <div class="aspect-ratio">
+          <div class="content">
+            <div class="card-graphic">
+              <img src="{{url_for('static', filename='images/projects/portfolio_website.jpg')}}" align="middle" alt="portfolio_website.jpg"/>
+            </div>
+            <div class="card-text">
+              <div class="card-title">
+                Portfolio website
+              </div>
+              <div class="card-body">
+                See how I made this website.
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
+
     <!-- Add back when there are more than 3 projects <div class="projects-button">
       <a class="button" href="/projects">More projects</a>
     </div> -->
