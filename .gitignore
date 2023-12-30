@@ -2,7 +2,7 @@
 website/static/gen
 
 # Images
-website/static/images
+website/static/images/powerpoint
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

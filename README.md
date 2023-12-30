@@ -8,7 +8,7 @@ This project was used to create my personal software development and machine lea
 
 ### Dependencies
 
-All that is required is Python version 3.12 and a package manager such as Virtualenv or Conda. The required Python packages are listed in the `requirements.txt` file (pip) and `environment.yml` file (conda).
+All that is required is Python version 3.10.5 and a package manager such as Virtualenv or Conda. The required Python packages are listed in the `requirements.txt` file (pip) and `environment.yml` file (conda).
 
 ### Installation
 
@@ -27,7 +27,7 @@ pip list --format=freeze > requirements.txt
 ```
 To update the `environment.yml` file, run the following command:
 ```
-conda env -f > environment.yml
+conda env export > environment.yml
 ```
 
 ## License

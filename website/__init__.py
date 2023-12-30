@@ -2,10 +2,11 @@ from flask import Flask
 from flask_assets import Bundle, Environment
 from .views import views
 from .auth import auth
+from os import urandom
 
 def create_app():
     app = Flask(__name__)
-    app.config['SECRET_KEY'] = 'my key'
+    app.config['SECRET_KEY'] = urandom(1000)
 
     app.register_blueprint(views, url_prefix='/')
     app.register_blueprint(auth, url_prefix='/')
