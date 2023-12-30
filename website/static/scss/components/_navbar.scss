@@ -12,7 +12,6 @@
     z-index: 4;
     
     .nav-logo {
-        background-color: transparent;
         height: $navlogo-dim;
         width: $navlogo-dim;
         margin-left: $margin-base;
@@ -22,6 +21,8 @@
             width: 100%;
             object-fit: cover;
             border-radius: inherit;
+            background-color: $accent-colour-light;
+            border-radius: 9999px;
         }
     }
 
