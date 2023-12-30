@@ -21,7 +21,7 @@
         .aspect-ratio {
             position: relative;
             width: 100%;
-            padding-bottom: 100%; // This value controls the aspect ratio of the card: padding-bottom = (desired height / desired width) * 100% 
+            padding-bottom: 125%; // This value controls the aspect ratio of the card: padding-bottom = (desired height / desired width) * 100% 
             overflow: hidden;
             border-radius: inherit;
   
@@ -63,6 +63,7 @@
                         }
                 
                         .card-body {
+                            margin-top: $padding-base/2;
                             font-size: $font-size-base;
                             color: $font-colour-light;
                         }
@@ -78,7 +79,7 @@
                         text-align: center;
                         box-sizing: border-box;
                         border-radius: 5px;
-                        width: 20%;
+                        min-width: 20%;
                         padding: 3px;
                         box-shadow: 0 0 4px rgba(33,33,33,.2);
                         font-weight: $font-weight-bold;

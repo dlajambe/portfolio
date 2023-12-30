@@ -53,47 +53,15 @@
 <section class="section-light">
   <div class="page-content container">
     <div class="page-content-title">
-      My Projects
+      My Personal Projects
     </div>
     <div class="page-content-subtitle">
       Here are some of the projects I have worked on. Have a question?
       <a class="hyperlink" href="/contact">Contact me</a>.
     </div>
     <div class="grid">
-      <div class="card", onclick="window.open('https://github.com/dlajambe/llm-from-scratch')">
-        <div class="aspect-ratio">
-          <div class="content">
-            <div class="card-graphic">
-              <img src="{{url_for('static', filename='images/llm_from_scratch.jpg')}}" align="middle" alt="llm_from_scratch.jpg"/>
-            </div>
-            <div class="card-text">
-              <div class="card-title">
-                LLM from scratch
-              </div>
-              <div class="card-body">
-                Building a generative language model from Scratch in PyTorch.
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="card", onclick="window.open('https://github.com/dlajambe/portfolio')">
-        <div class="aspect-ratio">
-          <div class="content">
-            <div class="card-graphic">
-              <img src="{{url_for('static', filename='images/portfolio_website.jpg')}}" align="middle" alt="portfolio_website.jpg"/>
-            </div>
-            <div class="card-text">
-              <div class="card-title">
-                Portfolio website
-              </div>
-              <div class="card-body">
-                See how I made this website.
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      <div class="card", id="card-llm-from-scratch"></div>
+      <div class="card", id="card-portfolio-website"></div>
     </div>
 
     <!-- Add back when there are more than 3 projects <div class="projects-button">
@@ -101,5 +69,5 @@
     </div> -->
   </div>
 </section>
-
+<script type='module' src="{{ url_for('static', filename='js/create_project_cards.js') }}"></script>
 {% endblock %}
