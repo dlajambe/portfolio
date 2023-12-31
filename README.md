@@ -8,11 +8,11 @@ This project was used to create my personal software development and machine lea
 
 ### Dependencies
 
-All that is required is Python version 3.10.5 and a package manager such as Virtualenv or Conda. The required Python packages are listed in the `requirements.txt` file (pip) and `environment.yml` file (conda).
+All that is required is Python version 3.10.5 and a virtual environment creation tool, such as virtualenv or conda. The required Python packages are listed in the `requirements.txt` file (pip) and `environment.yml` file (conda).
 
 ### Installation
 
-To install, simply clone the repository onto your machine and use your package manager to recreate the environment with the provided `requirements.txt` file. If you have Anaconda or Miniconda, you can instead use the `environment.yml` to reproduce the environment.
+To install, simply clone the repository onto your machine and use your virtual environment creation tool to recreate the environment with the provided `requirements.txt` file. If you have Anaconda or Miniconda, you can instead use the `environment.yml` to reproduce the environment.
 
 ### Execution
 
