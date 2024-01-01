@@ -1,8 +1,10 @@
 # My Portfolio Website
 
+A Flask-based web application for exhibiting a project portfolio.
+
 ## Description
 
-This project was used to create my personal software development and machine learning portfolio website.
+This project was used to create my personal software development and machine learning portfolio website, powered by Flask.
 
 ## Getting Started
 
@@ -18,7 +20,7 @@ To install, simply clone the repository onto your machine and use your virtual e
 
 The website can be started locally through the command line. With your virtual environment activated, navigate to the `portfolio/` directory and execute the following command: 
 ```
-python main.py
+python app.py
 ```
 
 To update the `requirements.txt` file, run the following command:
