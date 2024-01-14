@@ -22,18 +22,19 @@ $min-page-header-height: 450px;
             
             gap: $padding-base;
 
-            .page-header-text-large {
+            h1 {
                 font-size: 65px;
                 font-weight: $font-weight-bold;
                 color: $font-colour-dark;
             }
 
-            .page-header-text-medium {
+            h2 {
                 font-size: 35px;
+                font-weight: $font-weight-normal;
                 color: $font-colour-light;
             }
 
-            .page-header-text-small {
+            p {
                 font-size: 22px;
                 color: $font-colour-light;
             }

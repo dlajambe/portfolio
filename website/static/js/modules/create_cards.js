@@ -7,15 +7,15 @@ function createCard(cardData) {
           <div class="content">
             <div class="content-main">
               <div class="card-graphic">
-                <img src=${cardData.image_path} align="middle" alt=${cardData.image_path}/>
+                <img src=${cardData.image_path} align="middle" alt=${cardData.image_alt}/>
               </div>
               <div class="card-text">
-                <div class="card-title">
+                <h1>
                   ${cardData.title}
-                </div>
-                <div class="card-body">
+                </h1>
+                <p>
                   ${cardData.body}
-                </div>
+                </p>
               </div>
             </div>
             <div class="content-tags" id=${tagId}>

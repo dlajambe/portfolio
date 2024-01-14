@@ -6,19 +6,15 @@
     padding-top: 2 * $padding-base;
     padding-bottom: 2 * $padding-base;
 
-    .page-content-title {
+    h1 {
         color: $font-colour-dark;
         font-size: $font-size-base + 14px;
         font-weight: $font-weight-bold;
     }
 
-    .page-content-subtitle {
+    p {
         font-size: $font-size-base + 4px;
         color: $font-colour-light;
-
-        p {
-            margin-top: $margin-base;
-            max-width: 900px;
-        }
+        max-width: 900px;
     }
 }

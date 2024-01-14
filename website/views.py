@@ -10,9 +10,9 @@ def index():
 def about():
     return render_template('about.html')
 
-@views.route('/projects')
-def projects():
-    return render_template('projects.html')
+# @views.route('/projects')
+# def projects():
+#     return render_template('projects.html')
 
 @views.route('/publications')
 def publications():

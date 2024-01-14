@@ -1,4 +1,4 @@
-.grid {
+.card-grid {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
@@ -56,13 +56,13 @@
                 
                     .card-text {
                         margin-top: $padding-base;
-                        .card-title {
+                        h1 {
                             font-size: $font-size-base + 4px;
                             font-weight: $font-weight-bold;
                             color: $font-colour-dark;
                         }
                 
-                        .card-body {
+                        p {
                             margin-top: $padding-base/2;
                             font-size: $font-size-base;
                             color: $font-colour-light;
@@ -92,7 +92,7 @@
 
 // The number of columns and column width are controlled here
 @include xs {
-    .grid {
+    .card-grid {
         .card {
             flex: 0 1 90%; // 1 column, nearly full width
         }
@@ -100,7 +100,7 @@
 }
 
 @include sm {
-    .grid {
+    .card-grid {
         .card {
             flex: 0 1 65%; // 1 column that is smaller than the xs version
         }
@@ -108,7 +108,7 @@
 }
 
 @include md {
-    .grid {
+    .card-grid {
         .card {
             flex: 0 1 45%; // 2 columns
         }
@@ -116,7 +116,7 @@
 }
 
 @include lg {
-    .grid {
+    .card-grid {
         .card {
             flex: 0 1 30%; // 3 columns
         }

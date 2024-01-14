@@ -9,16 +9,14 @@
         flex-direction: column;
         gap: 0.5rem;
 
-        .page-footer-title {
+        h1 {
             font-size: $font-size-base + 2px;
+            font-weight: $font-weight-normal;
         }
     
-        .page-footer-subtitle {
-    
-        }
-    
-        .page-footer-copyright {
-    
+        h2 {
+            font-size: $font-size-base;
+            font-weight: $font-weight-normal;
         }
     }
 }

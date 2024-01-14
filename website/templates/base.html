@@ -18,7 +18,7 @@
     <nav class="navbar">
       <div class="nav-logo">
         <a href="/">
-          <img src="{{url_for('static', filename='images/logo.jpg')}}" alt="logo.jpg"/>
+          <img src="{{url_for('static', filename='images/logo.jpg')}}" alt="David LaJambe logo"/>
         </a>
       </div>
       <ul class="nav-menu">
@@ -40,12 +40,12 @@
         <li class="nav-item">
           <div class="nav-social">
             <a href="https://github.com/dlajambe", target="_blank">
-              <img src="{{url_for('static', filename='images/github.png')}}" alt="github.png"/>
+              <img src="{{url_for('static', filename='images/github.png')}}" alt="GitHub logo"/>
             </a>
           </div>
           <div class="nav-social">
             <a href="https://www.linkedin.com/in/david-lajambe/", target="_blank">
-              <img src="{{url_for('static', filename='images/linkedin.png')}}" alt="linkedin.png"/>
+              <img src="{{url_for('static', filename='images/linkedin.png')}}" alt="LinkedIn logo"/>
             </a>
           </div>
         </li>
@@ -59,16 +59,16 @@
     {% block footer %}
     <section class="page-footer">
       <div class="page-footer-content container">
-        <div class="page-footer-title">
+        <h1>
           Made by David LaJambe
-        </div>
-        <div class="page-footer-subtitle">
-          Software developer & machine learning engineer
-        </div>
+        </h1>
+        <h2>
+          Software Developer & Machine Learning Engineer
+        </h2>
         <hr>
-        <div class="page-footer-copyright">
+        <h2>
           &copy 2024 David LaJambe
-        </div>
+        </h2>
     </section>
     {% endblock %}
     <script type='text/javascript' src="{{ url_for('static', filename='js/hamburger.js') }}"></script>
