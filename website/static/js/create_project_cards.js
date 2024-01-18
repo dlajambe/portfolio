@@ -29,6 +29,16 @@ const projectCards = [
     body: 'Creating a transformer-based neural network to classify the sentiment of English text.',
     tags: ['NLP', 'PyTorch', 'Python']
   },
+
+  {
+    id: 'card-model-api', 
+    url: 'https://github.com/dlajambe/restful-ml',
+    image_path: '../static/images/model_api.svg',
+    image_alt: '"RESTful model API"',
+    title: 'Model API',
+    body: 'Developing a lightweight REST API to interact with web-deployed machine learning models.',
+    tags: ['Python', 'API', 'Flask']
+  }
 ];
 
 createCards(projectCards);
