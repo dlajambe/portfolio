@@ -35,8 +35,8 @@ const projectCards = [
     url: 'https://github.com/dlajambe/restful-ml',
     image_path: '../static/images/model_api.svg',
     image_alt: '"RESTful model API"',
-    title: 'Model API',
-    body: 'Developing a lightweight REST API to interact with web-deployed machine learning models.',
+    title: 'Model REST API',
+    body: 'Developing an extensible REST API to interact with web-deployed machine learning models.',
     tags: ['Python', 'API', 'Flask']
   }
 ];
